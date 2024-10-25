@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Welcome to Yupeng Su's Homepage!"
-description              : "Undergraduate in SUSTech, School of Microelectronics. Focusing on Efficient/Low-resource LLMs and Edge Deployment."
+description              : "Undergraduate in SUSTech, School of Microelectronics. Focusing on Efficient/Low-resource LLMs and Model Edge Deployment."
 repository               : "YupengSu/YupengSu.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -30,7 +30,7 @@ author:
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=zZ8lS-UAAAAJ"
   email            : "yupengsu06@gmail.com"
-  researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
+  researchgate     : # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
