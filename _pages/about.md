@@ -17,14 +17,19 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+Hi there! I am a senior student from <a href='https://osa.sustech.edu.cn/index.php?g=School&m=College&a=syjj&term=67&pterm=66'> ZhiCheng College (致诚书院) </a> and <a href='https://haoyulab.sme.sustech.edu.cn/'> School of Microelectronics (深港微电子学院) </a> in Southern University of Science and Technology, advice by <a href='https://scholar.google.com/citations?user=X06MaeYAAAAJ&hl=en'> Hao Yu (余浩) </a>. I also work at <a href='https://hku-ngai.github.io/'> Hong Kong University </a> as a student research assistant and collaborate with <a href='https://scholar.google.com/citations?user=PM_uMYIAAAAJ&hl=en'> Ngai Wong </a> closely.
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+My research interests includes Efficient/Low-resource methods for NLP, Model Edge Deployment and AI accelerator. I have published and submitted papers with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a> at the top international AI conferences such as DAC, NAACL.
 
+I have plentiful experiences in all stages of LLMs, including Pretraining(from scratch/continue pretrain), Supervised Fine-tuning, Evaluation, Model Compression(Quantization, Pruning, Knowledge Distillation & Low-rank Decomposition) and Deployment(mainly focus on edge). 
+
+My skills are not only proficient in implementing algorithms design using C++, Python, or Java, but I am also familiar with the entire IC design process, including but not limited to digital circuit front-end design using verilog HDL for ASIC/FPGA, chip layout drawing, and some compiler design. 
+
+I am now actively looking for a Ph.D. position in the field of AI/ML/IC design. If you are interested in my research or have any questions, please feel free to contact me at yupengsu06@gmail.com or suyp2021@mail.sustech.edu.cn .
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2024.09*: &nbsp; I join HKU Ngai Wong's Lab as Student RA and collaborate with HKUST Hongxia Yang's Lab, focusing on low bit pretraining approach!
+- *2024.02*: &nbsp; 🎉 Our paper are accepted by DAC 2024.
 
 # 📝 Publications 
 
