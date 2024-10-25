@@ -32,7 +32,7 @@ I am now actively looking for a PhD position in the field of AI/ML/IC design. If
 - *2024.02* : &nbsp; 🎉 Our paper are accepted by DAC 2024.
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">DAC 2024</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ARXIV</div><img src='/pdf/LLM-Barber.pdf' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [LLM-Barber: Block-Aware Rebuilder for Sparsity Mask in One-Shot for Large Language Models](https://arxiv.org/pdf/2408.10631)
@@ -45,7 +45,7 @@ I am now actively looking for a PhD position in the field of AI/ML/IC design. If
 </div> 
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">DAC 2024</div><img src='pdf/APTQ.pdf' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">DAC 2024</div><img src='/pdf/APTQ.pdf' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [APTQ: Attention-aware Post-Training Mixed-Precision Quantization for Large Language Models](https://arxiv.org/pdf/2402.14866)
