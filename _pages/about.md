@@ -35,16 +35,17 @@ I am now actively looking for a PhD position in the field of AI/ML/IC design. If
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">DAC 2024</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[APTQ: Attention-aware Post-Training Mixed-Precision Quantization for Large Language Models](https://arxiv.org/pdf/2402.14866)
+[LLM-Barber: Block-Aware Rebuilder for Sparsity Mask in One-Shot for Large Language Models](https://arxiv.org/pdf/2408.10631)
 
-Ziyi Guan, Hantao Huang, **Yupeng Su**, Hong Huang, Ngai Wong, Hao Yu
+**Yupeng Su**, Ziyi Guan, Xiaoqun Liu, Tianlai Jin, Dongkuan Wu, Graziano Chesi, Ngai Wong, Hao Yu
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zZ8lS-UAAAAJ&citation_for_view=zZ8lS-UAAAAJ:u5HHmVD_uO8C) <strong><span class='show_paper_citations' data='zZ8lS-UAAAAJ:u5HHmVD_uO8C'></span></strong>
--  
+[**Project**](https://github.com/YupengSu/LLM-Barber) <strong><span class='show_paper_citations' data='zZ8lS-UAAAAJ:u-x6o8ySG0sC'></span></strong>
+- LLM-Barber incorporates block-aware error optimization and introduces an innovative pruning metric with weights multiplied by gradients.
+- LLM-Barber not only supports unstructured pruning but also structured pruning such as N:M pattern, which is more suitable for hardware acceleration.
+</div> 
 </div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">DAC 2024</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">DAC 2024</div><img src='pdf/APTQ.pdf' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [APTQ: Attention-aware Post-Training Mixed-Precision Quantization for Large Language Models](https://arxiv.org/pdf/2402.14866)
@@ -52,24 +53,20 @@ Ziyi Guan, Hantao Huang, **Yupeng Su**, Hong Huang, Ngai Wong, Hao Yu
 Ziyi Guan, Hantao Huang, **Yupeng Su**, Hong Huang, Ngai Wong, Hao Yu
 
 [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zZ8lS-UAAAAJ&citation_for_view=zZ8lS-UAAAAJ:u5HHmVD_uO8C) <strong><span class='show_paper_citations' data='zZ8lS-UAAAAJ:u5HHmVD_uO8C'></span></strong>
-- APTQ is the first approach to consider self-attention architecture during post-training quantization.
-- 
+- APTQ is the first approach to consider self-attention architecture during post-training quantization and conbine mix-precision by Hessian Matrix.
 </div>
 </div>
-
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
-
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.09 - present*, Undergraduate, Zhicheng College, Southern University of Science and Technology.
+- *2018.09 - 2021.06*, High School Student, The First High School of Changsha, Hunan.
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+# 🎖 Honors and Awards
+- *2024.09* SUSTech First Class of Merit Student Scholarship for 2023-2024 Academic Year.
+- *2023.12* Ministry of Education - Huawei Smart Base Project, Future Star. 
+- *2023.09* SUSTech First Class of Merit Student Scholarship for 2022-2023 Academic Year.
+- *2022.09* SUSTech First Class of Merit Student Scholarship for 2021-2022 Academic Year.
 
 # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2024.09 - 2025.02*, Student RA, Ngai Wong's Lab, HKU.
+- *2024.06 - 2024.08*, Engineering Intern, High Performance Integrated Circuit Design Lab, SUSTech.
