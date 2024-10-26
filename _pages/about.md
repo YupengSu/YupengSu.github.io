@@ -28,7 +28,7 @@ My skills are not only proficient in implementing algorithms design using C++, P
 I am now actively looking for a PhD position in the field of AI/ML/IC design. If you are interested in my research or have any questions, please feel free to contact me at <a href='mailto:yupengsu06@gmail.com'> yupengsu06@gmail.com </a> or <a href='mailto:suyp2021@mail.sustech.edu.cn'> suyp2021@mail.sustech.edu.cn </a>.
 
 # 🔥 News
-- *2024.09* : &nbsp; I join HKU Ngai Wong's Lab as Student RA and collaborate with HKUST Hongxia Yang's Lab!
+- *2024.09* : &nbsp; I join HKU Ngai Wong's Lab as Student RA and collaborate with PloyU Hongxia Yang's Lab!
 - *2024.02* : &nbsp; 🎉 Our paper are accepted by DAC 2024.
 
 # 📝 Publications 
