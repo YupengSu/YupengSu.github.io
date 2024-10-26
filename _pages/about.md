@@ -58,6 +58,9 @@ Ziyi Guan, Hantao Huang, **Yupeng Su**, Hong Huang, Ngai Wong, Hao Yu
 </div>
 
 # 🛠 Projects
+- `Hisilicon Embedded Competition` <span style="color:red;">(Second Prize)</span> [HiBao: Your Artificial Intelligent Voice Assistant](https://github.com/YupengSu/HiBao), **Yupeng Su**, Guanqi Peng, Jiaqi Yang.
+- `SME309 Microprocessor Design` [ARM Processor Designed with Verilog](https://github.com/YupengSu/SME309_MicroprocessorDesign), **Yupeng Su**.
+- `CS205 Cpp Program Design` [Libtensor Designed with C++ ](https://github.com/YupengSu/CppProject-libtensor), **Yupeng Su**, Xiaoqun Liu, Zexin Feng.
 
 # 📖 Educations
 - *2021.09 - present*, Undergraduate, Zhicheng College, Southern University of Science and Technology.
@@ -72,3 +75,7 @@ Ziyi Guan, Hantao Huang, **Yupeng Su**, Hong Huang, Ngai Wong, Hao Yu
 - *2023.12*, Ministry of Education - Huawei Smart Base Project, Future Star. 
 - *2023.09*, SUSTech First Class of Merit Student Scholarship for 2022-2023 Academic Year.
 - *2022.09*, SUSTech First Class of Merit Student Scholarship for 2021-2022 Academic Year.
+
+# 📚 Student Works
+- *2023.09 - 2025.06*, Peer Mentor for Academic Advisory Program, Student Affairs Department of SUSTech.
+- *2022.09 - 2025.06*, Instructor for Undergraduate Course Calculus I/II, Student Development Center of SUSTech. [Sample Link](https://www.bilibili.com/video/BV1HfyYYmECv?vd_source=3e471d2001b90dde25b0ba03e8cefd02)
