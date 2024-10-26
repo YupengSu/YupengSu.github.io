@@ -25,7 +25,7 @@ I have plentiful experiences in all stages of LLMs, including Pretraining(from s
 
 My skills are not only proficient in implementing algorithms design using C++, Python or Java, but I am also familiar with the entire IC design process, including digital circuit front-end design using verilog HDL for ASIC/FPGA, chip layout drawing, and some compiler design.
 
-I am now actively looking for a PhD position in the field of AI/ML/IC design. If you are interested in my research or have any questions, please feel free to contact me at <a href='mailto:yupengsu06@gmail.com'> yupengsu06@gmail.com </a> or <a href='mailto:suyp2021@mail.sustech.edu.cn'> suyp2021@mail.sustech.edu.cn </a>.
+I am now actively looking for a PhD position in the field of AI/ML/IC design, my personal CV is attached <a href='https://yupengsu.github.io/cv/personal-cv.pdf'> here </a>. If you are interested in my research or have any questions, also please feel free to contact me at <a href='mailto:yupengsu06@gmail.com'> yupengsu06@gmail.com </a> or <a href='mailto:suyp2021@mail.sustech.edu.cn'> suyp2021@mail.sustech.edu.cn </a>.
 
 # 🔥 News
 - *2024.09* : &nbsp; I join HKU Ngai Wong's Lab as Student RA and collaborate with PloyU Hongxia Yang's Lab!
