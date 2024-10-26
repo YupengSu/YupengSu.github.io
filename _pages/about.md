@@ -58,9 +58,9 @@ Ziyi Guan, Hantao Huang, **Yupeng Su**, Hong Huang, Ngai Wong, Hao Yu
 </div>
 
 # 🛠 Projects
-- <code class="highlighter-rouge">Hisilicon Embedded Competition</code> <span style="color:red;">(Second Prize)</span> [HiBao: Your Artificial Intelligent Voice Assistant](https://github.com/YupengSu/HiBao), **Yupeng Su**, Guanqi Peng, Jiaqi Yang.
-- <code class="highlighter-rouge">SME309 Microprocessor Design</code> [ARM Processor Designed with Verilog](https://github.com/YupengSu/SME309_MicroprocessorDesign), **Yupeng Su**.
-- <code class="highlighter-rouge">CS205 Cpp Program Design</code> [Libtensor Designed with C++ ](https://github.com/YupengSu/CppProject-libtensor), **Yupeng Su**, Xiaoqun Liu, Zexin Feng.
+- <div class="language-plaintext highlighter-rouge">Hisilicon Embedded Competition</div> <span style="color:red;">(Second Prize)</span> [HiBao: Your Artificial Intelligent Voice Assistant](https://github.com/YupengSu/HiBao), **Yupeng Su**, Guanqi Peng, Jiaqi Yang.
+- <div class="language-plaintext highlighter-rouge">SME309 Microprocessor Design</div> [ARM Processor Designed with Verilog](https://github.com/YupengSu/SME309_MicroprocessorDesign), **Yupeng Su**.
+- <div class="language-plaintext highlighter-rouge">CS205 Cpp Program Design</div> [Libtensor Designed with C++ ](https://github.com/YupengSu/CppProject-libtensor), **Yupeng Su**, Xiaoqun Liu, Zexin Feng.
 
 # 📖 Educations
 - *2021.09 - present*, Undergraduate, Zhicheng College, Southern University of Science and Technology.
