@@ -17,7 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi there! I am a senior student from <a href='https://osa.sustech.edu.cn/index.php?g=School&m=College&a=syjj&term=67&pterm=66'> ZhiCheng College (致诚书院)</a> and <a href='https://haoyulab.sme.sustech.edu.cn/'> School of Microelectronics (深港微电子学院)</a> in Southern University of Science and Technology, advice by <a href='https://scholar.google.com/citations?user=X06MaeYAAAAJ&hl=en'> Hao Yu (余浩)</a>. I also work at <a href='https://hku-ngai.github.io/'> The University of Hong Kong </a> as a Student RA and collaborate with <a href='https://scholar.google.com/citations?user=PM_uMYIAAAAJ&hl=en'> Ngai Wong</a> closely.
+Hi there! 👋 Welcome to YupengSu's Homepage.
+
+I am a senior student from <a href='https://osa.sustech.edu.cn/index.php?g=School&m=College&a=syjj&term=67&pterm=66'> ZhiCheng College (致诚书院)</a> and <a href='https://haoyulab.sme.sustech.edu.cn/'> School of Microelectronics (深港微电子学院)</a> in Southern University of Science and Technology, advice by <a href='https://scholar.google.com/citations?user=X06MaeYAAAAJ&hl=en'> Hao Yu (余浩)</a>. I also work at <a href='https://hku-ngai.github.io/'> The University of Hong Kong </a> as a Student RA and collaborate with <a href='https://scholar.google.com/citations?user=PM_uMYIAAAAJ&hl=en'> Ngai Wong</a> closely.
 
 My research interests includes Efficient/Low-resource methods for NLP, Model Edge Deployment and AI accelerator. I have published and submitted papers with total <a href='https://scholar.google.com/citations?user=zZ8lS-UAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a> at the top international AI conferences such as DAC, NAACL.
 
