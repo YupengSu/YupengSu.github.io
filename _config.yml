@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Welcome to Yupeng Su's Homepage!"
-description              : "Undergraduate in SUSTech, School of Microelectronics. Focusing on Efficient/Low-resource LLMs and Model Edge Deployment."
+description              : "Ph.D. Student in UCSB, Department of Computer Science. Focusing on Efficient/Low-Resource Algorithms and Systems."
 repository               : "YupengSu/YupengSu.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -24,7 +24,7 @@ author:
   name             : "Yupeng Su"
   avatar           : "images/android-chrome-512x512.png"
   photo            : "images/photo.png"
-  bio              : "EE/CS PhD Applicant of 2025 Fall"
+  bio              : "Ph.D. Student, University of California, Santa Barbara."
   location         : "Shenzhen, China"
   employer         :
   pubmed           : 
