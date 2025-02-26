@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Welcome to Yupeng Su's Homepage!"
-description              : "Ph.D. Student in UCSB, Department of Computer Science. Focusing on Efficient/Low-Resource Algorithms and Systems."
+description              : "Focusing on Efficient/Low-Resource Algorithms and Systems."
 repository               : "YupengSu/YupengSu.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -24,7 +24,7 @@ author:
   name             : "Yupeng Su"
   avatar           : "images/android-chrome-512x512.png"
   photo            : "images/photo.png"
-  bio              : "Ph.D. Student, University of California, Santa Barbara."
+  bio              : "Ph.D. Student, University of California, Santa Barbara, Department of Computer Science."
   location         : "Shenzhen, China"
   employer         :
   pubmed           : 
