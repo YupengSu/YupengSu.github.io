@@ -70,7 +70,7 @@ Ziyi Guan, Hantao Huang, **Yupeng Su**, Hong Huang, Ngai Wong, Hao Yu
 - ``CS205 Cpp Program Design`` <a href='https://github.com/YupengSu/CppProject-libtensor'> Libtensor Designed with C++</a>, **Yupeng Su**, Xiaoqun Liu, Zexin Feng.
 
 # 📖 Educations
-- *2021.09 - present*, Undergraduate, Zhicheng College, Southern University of Science and Technology.
+- *2021.09 - present*, Bachelor of Engineering, School of Microelectronics, Southern University of Science and Technology.
 - *2018.09 - 2021.06*, High School Student, The First High School of Changsha, Hunan.
 
 # 💻 Internships
