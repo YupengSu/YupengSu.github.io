@@ -85,4 +85,4 @@ Ziyi Guan, Hantao Huang, **Yupeng Su**, Hong Huang, Ngai Wong, Hao Yu
 
 # 📚 Student Works
 - *2023.09 - 2025.06*, Peer Mentor for Academic Advisory Program, Student Affairs Department of SUSTech.
-- *2022.09 - 2025.06*, Instructor for Undergraduate Course Calculus I/II, Student Development Center of SUSTech. [Sample Link](https://www.bilibili.com/video/BV1HfyYYmECv?vd_source=3e471d2001b90dde25b0ba03e8cefd02)
+- *2022.09 - 2025.06*, Instructor for Undergraduate Course Calculus I/II, Student Development Center of SUSTech. [Repo Link](https://github.com/YupengSu/Calculus)
