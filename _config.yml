@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Welcome to Yupeng Su's Homepage!"
-description              : "Focusing on Efficient/Low-Resource Algorithms and Systems."
+description              : "Focusing on Efficient LLM Optimization and High-Performance Computing."
 repository               : "YupengSu/YupengSu.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -24,12 +24,12 @@ author:
   name             : "Yupeng Su"
   avatar           : "images/android-chrome-512x512.png"
   photo            : "images/photo.png"
-  bio              : "Ph.D. Student, University of California, Santa Barbara, Department of Computer Science."
-  location         : "Shenzhen, China"
+  bio              : "Ph.D. Student in Computer Science, UC Santa Barbara."
+  location         : "Santa Barbara, CA, USA"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=zZ8lS-UAAAAJ"
-  email            : "yupengsu06@gmail.com"
+  email            : "yupengsu@ucsb.edu"
   researchgate     : # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
