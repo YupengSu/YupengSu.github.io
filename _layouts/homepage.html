@@ -115,7 +115,7 @@
         <li class="pub{% if p.first_author %} pub--first{% endif %}">
           <p class="pub__title">{% if p.first_author %}<span class="star" title="First author">★</span> {% endif %}<a href="{{ p.links.paper }}" target="_blank" rel="noopener">{{ p.title }}</a></p>
           <p class="pub__authors">{{ p.authors | replace: 'Yupeng Su', '<strong>Yupeng Su</strong>' }}</p>
-          <p class="pub__meta"><span class="pub__venue">{{ p.venue_full }}, {{ p.year }}</span><span class="dot">·</span><a href="{{ p.links.paper }}" target="_blank" rel="noopener">Paper</a>{% if p.links.code %}<span class="dot">·</span><a href="{{ p.links.code }}" target="_blank" rel="noopener">Code</a>{% endif %}</p>
+          <p class="pub__meta"><span class="pub__venue">{{ p.venue_full }}, {{ p.year }}</span><span class="dot">·</span><a href="{{ p.links.paper }}" target="_blank" rel="noopener">Paper</a>{% if p.links.code %}<span class="dot">·</span><a href="{{ p.links.code }}" target="_blank" rel="noopener">Code</a>{% endif %}{% if p.links.project %}<span class="dot">·</span><a href="{{ p.links.project }}" target="_blank" rel="noopener">Project</a>{% endif %}</p>
         </li>
         {% endfor %}
       </ul>

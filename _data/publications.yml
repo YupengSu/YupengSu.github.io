@@ -12,6 +12,7 @@
   links:
     paper: "https://arxiv.org/abs/2605.11396"
     code: "https://github.com/YupengSu/MuonQ"
+    project: "https://yupengsu.github.io/MuonQ"
 
 - title: "RankGuide: Tensor-Rank-Guided Routing and Steering for Efficient Reasoning"
   authors: "Jiayi Tian, Yupeng Su, Ryan Solgi, Souvik Kundu, Zheng Zhang"
