@@ -8,6 +8,7 @@
 # Site Settings
 title                    : "Welcome to Yupeng Su's Homepage!"
 description              : "Focusing on Efficient LLM Optimization and High-Performance Computing."
+url                      : "https://yupengsu.github.io"
 repository               : "YupengSu/YupengSu.github.io"
 google_scholar_stats_use_cdn : true
 
