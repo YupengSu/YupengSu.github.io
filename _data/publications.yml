@@ -94,7 +94,7 @@
   first_author: false
   tldr: "A CPU-FPGA heterogeneous accelerator delivering highly efficient large language model inference on the edge."
   links:
-    paper: "https://arxiv.org/abs/2407.21325"
+    paper: "https://doi.org/10.1109/TCSI.2025.3546256"
 
 - title: "APTQ: Attention-Aware Post-Training Mixed-Precision Quantization for Large Language Models"
   authors: "Ziyi Guan, Hantao Huang, Yupeng Su, Hong Huang, Ngai Wong, Hao Yu"
@@ -105,4 +105,4 @@
   image: "/images/APTQ.jpg"
   tldr: "First to account for the self-attention architecture during post-training quantization, combining mixed-precision via the Hessian matrix."
   links:
-    paper: "https://arxiv.org/abs/2402.14866"
+    paper: "https://doi.org/10.1145/3649329.3658498"
