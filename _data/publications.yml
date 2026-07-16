@@ -53,6 +53,16 @@
   links:
     paper: "https://arxiv.org/abs/2601.23261"
 
+- title: "APTQ+: Attention-FFN-aware Post-Training Quantization for a Layer-wise LLM Accelerator on FPGA"
+  authors: "Ziyi Guan, Zhengfei Chen, Dongkuan Wu, Ao Shen, Yifan Guo, Yupeng Su, Graziano Chesi, Mingqiang Huang, Ngai Wong, Hao Yu"
+  venue: "TCAD 2026"
+  venue_full: "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems"
+  year: 2026
+  first_author: false
+  tldr: "Attention-FFN-aware post-training quantization using second-order Hessian information, paired with a layer-wise LLM accelerator on FPGA."
+  links:
+    paper: "https://doi.org/10.1109/TCAD.2026.3697679"
+
 - title: "LLM-Barber: Block-Aware Rebuilder for Sparsity Mask in One-Shot for Large Language Models"
   authors: "Yupeng Su, Ziyi Guan, Xiaoqun Liu, Tianlai Jin, Dongkuan Wu, Zhengwu Chen, Graziano Chesi, Ngai Wong, Hao Yu"
   venue: "ICCAD 2025"
