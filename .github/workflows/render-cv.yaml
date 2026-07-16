@@ -1,0 +1,66 @@
+name: Render CV
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [cv]
+    paths:
+      - 'cv-source/**.yaml'
+      - '.github/workflows/render-cv.yaml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-cv
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout cv branch
+        uses: actions/checkout@v4
+
+      - name: Checkout main (deploy target)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main-repo
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install RenderCV
+        run: pip install "rendercv[full]==2.8"
+
+      - name: Render CV
+        working-directory: cv-source
+        run: rendercv render Yupeng_Su_CV.yaml
+
+      - name: Commit rendered output to cv branch
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cv-source/rendercv_output
+          if git diff --cached --quiet; then
+            echo "No output change."
+          else
+            git commit -m "Render CV output [skip ci]"
+            git push origin HEAD:cv
+          fi
+
+      - name: Deploy PDF to main (cv/personal-cv.pdf)
+        run: |
+          cp cv-source/rendercv_output/Yupeng_Su_CV.pdf main-repo/cv/personal-cv.pdf
+          cd main-repo
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cv/personal-cv.pdf
+          if git diff --cached --quiet; then
+            echo "CV PDF unchanged on main."
+          else
+            git commit -m "Update CV PDF from cv branch"
+            git push origin HEAD:main
+          fi

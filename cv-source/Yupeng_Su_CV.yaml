@@ -1,0 +1,132 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+#
+# Yupeng Su — CV source (RenderCV v2.8, "classic" theme).
+# Edit this file and push; the GitHub Action renders the PDF and updates
+# cv/personal-cv.pdf on the main branch (the link used by the homepage).
+#
+cv:
+  name: Yupeng Su
+  location: Santa Barbara, CA, USA
+  email: yupengsu@ucsb.edu
+  website: https://yupengsu.github.io
+  social_networks:
+    - network: LinkedIn
+      username: yupeng-su
+    - network: GitHub
+      username: YupengSu
+  sections:
+    Research Interests:
+      - "**Efficient Pre-training / Post-training Optimization for Large Language Models:** focusing on quantization, sparsification, and low-rank decomposition techniques to improve training and inference efficiency."
+      - "**High-Performance Computing Infrastructure on GPU / FPGA Architectures:** including compiler optimization and GPU/FPGA kernel adaptation for high-performance, energy-efficient inference and practical edge deployment."
+    education:
+      - institution: University of California, Santa Barbara
+        area: Computer Science
+        degree: PhD
+        location: CA, USA
+        start_date: 2025-09
+        end_date: present
+        highlights:
+          - "Advisor: Prof. Zheng Zhang (ECE, UCSB)."
+      - institution: Southern University of Science and Technology
+        area: Microelectronics
+        degree: BE
+        location: China
+        start_date: 2021-09
+        end_date: 2025-07
+        highlights:
+          - "Advisor: Prof. Hao Yu (SME, SUSTech)."
+          - "CGA/GPA: 3.93/4.0, with 178 units completed."
+          - "Awards: Nominee of Top Ten Graduates of SUSTech; Top Ten Graduates of the College of Engineering, SUSTech."
+          - "Dissertation: *Enhanced Mix-Precision Post-Training Quantization for Large Language Models: Block Awareness and Outlier Identification.*"
+    publications:
+      - title: "APTQ: Attention-aware post-training mixed-precision quantization for large language models"
+        authors:
+          - Ziyi Guan
+          - Hantao Huang
+          - "**Yupeng Su**"
+          - Hong Huang
+          - Ngai Wong
+          - Hao Yu
+        doi: 10.1145/3649329.3658498
+        journal: IEEE/ACM DAC, 2024
+        date: 2024-06
+      - title: "LLM-Barber: Block-Aware Rebuilder for Sparsity Mask in One-Shot for Large Language Models"
+        authors:
+          - "**Yupeng Su**"
+          - Ziyi Guan
+          - Xiaoqun Liu
+          - Tianlai Jin
+          - Dongkuan Wu
+          - Chenfei Chen
+          - Graziano Chesi
+          - Ngai Wong
+          - Hao Yu
+        doi: 10.1109/ICCAD66269.2025.11240704
+        journal: IEEE/ACM ICCAD, 2025
+        date: 2025-11
+      - title: "EdgeLLM: A Highly Efficient CPU-FPGA Heterogeneous Edge Accelerator for Large Language Models"
+        authors:
+          - Mingqiang Huang
+          - Ao Shen
+          - Kai Li
+          - Haoxiang Peng
+          - Boyu Li
+          - "**Yupeng Su**"
+          - Hao Yu
+        doi: 10.1109/TCSI.2025.3546256
+        journal: "IEEE TCAS I: Regular Papers, 2025"
+        date: 2025-05
+      - title: "Quantization Meets Reasoning: Exploring Low-Bit Quantization Degradation for Mathematical Reasoning"
+        authors:
+          - "Zhen Li\\*"
+          - "**Yupeng Su**\\*"
+          - Runming Yang
+          - Congkai Xie
+          - Zheng Wang
+          - Zhongwei Xie
+          - Ngai Wong
+          - Hongxia Yang
+        url: https://arxiv.org/abs/2501.03035
+        journal: "Under Review (*Equal Contribution)"
+        date: 2025-01
+      - title: "PTQTP: Post-Training Quantization to Trit-Planes for Large Language Models"
+        authors:
+          - He Xiao
+          - Runming Yang
+          - Qingyao Yang
+          - Wendong Xu
+          - Zhen Li
+          - "**Yupeng Su**"
+          - Zhengwu Liu
+          - Hongxia Yang
+          - Ngai Wong
+        url: https://arxiv.org/abs/2509.16989
+        journal: "Under Review"
+        date: 2025-09
+    experience:
+      - company: Prof. Hongxia Yang's Lab @ PolyU
+        position: Student Research Assistant
+        location: Hong Kong, China
+        start_date: 2024-11
+        end_date: 2025-05
+        highlights:
+          - "Investigated the effects of compression on reasoning and explored data-driven strategies for restoration."
+      - company: Next Gen AI (NGai) Lab @ HKU
+        position: Student Research Assistant
+        location: Hong Kong, China
+        start_date: 2024-08
+        end_date: 2025-02
+        highlights:
+          - "Contributed to lightweight networks for efficient inference under specified computing architectures."
+      - company: High Performance Integrated Circuit Design Lab @ SUSTech
+        position: Summer Intern
+        location: China
+        start_date: 2024-06
+        end_date: 2024-09
+        highlights:
+          - "Implemented end-to-end pipelines for compressing, optimizing, and deploying models for efficient devices."
+          - "Published **EdgeLLM** based on the project and its results."
+design:
+  theme: classic
+  page:
+    show_top_note: true
