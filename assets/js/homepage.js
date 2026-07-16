@@ -90,7 +90,7 @@
     var base = S.useCdn
       ? "https://cdn.jsdelivr.net/gh/" + S.repo + "@"
       : "https://raw.githubusercontent.com/" + S.repo + "/";
-    fetch(base + "google-scholar-stats/gs_data.json", { cache: "no-cache" })
+    fetch(base + "google-scholar-stats/gs_data.json?t=" + Date.now(), { cache: "no-cache" })
       .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
       .then(function (data) { if (data.citedby != null) countUp(totalEl, data.citedby); })
       .catch(function () {});

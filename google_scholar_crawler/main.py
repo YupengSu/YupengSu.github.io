@@ -1,43 +1,89 @@
+"""Fetch Google Scholar citation data and write results/gs_data.json.
+
+Robustness goals:
+  * Try a direct connection first (fresh CI runner IPs often work), then fall
+    back to free rotating proxies with several retries.
+  * On total failure, write nothing and exit 0 so the workflow keeps the
+    previously published data instead of overwriting it with an empty file.
+"""
+
 from scholarly import scholarly, ProxyGenerator
 import json
-from datetime import datetime
 import os
-from scholarly._proxy_generator import MaxTriesExceededException
+import time
+from datetime import datetime
+
+SCHOLAR_ID = os.environ.get("GOOGLE_SCHOLAR_ID", "zZ8lS-UAAAAJ")
+DIRECT_ATTEMPTS = 2
+PROXY_ATTEMPTS = 6
 
 
-try:
-    print("正在查找作者信息...")
-    # Setup proxy
-    pg = ProxyGenerator()
-    pg.FreeProxies()  # Use free rotating proxies
-    scholarly.use_proxy(pg)
-    author: dict = scholarly.search_author_id("zZ8lS-UAAAAJ")
-except MaxTriesExceededException as e:
-    print(f"发生异常: {e}")
-else:
-    print("正在填充作者详细信息...")
+def fetch_author():
+    author = scholarly.search_author_id(SCHOLAR_ID)
     scholarly.fill(author, sections=["basics", "indices", "counts", "publications"])
-    name = author["name"]
-    author["updated"] = str(datetime.now())
-    author["publications"] = {v["author_pub_id"]: v for v in author["publications"]}
-    print(json.dumps(author, indent=2))
+    return author
 
-    print("正在创建结果目录...")
+
+def enable_free_proxy():
+    pg = ProxyGenerator()
+    if pg.FreeProxies():
+        scholarly.use_proxy(pg)
+        return True
+    return False
+
+
+def try_fetch():
+    # 1) Direct connection (no proxy).
+    for i in range(DIRECT_ATTEMPTS):
+        try:
+            print(f"[direct] attempt {i + 1}/{DIRECT_ATTEMPTS} ...")
+            return fetch_author()
+        except Exception as e:  # noqa: BLE001 - scholarly raises many types
+            print(f"[direct] failed: {type(e).__name__}: {e}")
+            time.sleep(3)
+
+    # 2) Free rotating proxies.
+    for i in range(PROXY_ATTEMPTS):
+        try:
+            print(f"[proxy] attempt {i + 1}/{PROXY_ATTEMPTS} ...")
+            if not enable_free_proxy():
+                print("[proxy] no working free proxy this round")
+                time.sleep(5)
+                continue
+            return fetch_author()
+        except Exception as e:  # noqa: BLE001
+            print(f"[proxy] failed: {type(e).__name__}: {e}")
+            time.sleep(5)
+
+    return None
+
+
+def main():
+    # Always create the output dir so the publish step's working-directory exists.
     os.makedirs("results", exist_ok=True)
 
-    print("正在保存作者数据...")
-    with open(f"results/gs_data.json", "w") as outfile:
-        json.dump(author, outfile, ensure_ascii=False)
+    author = try_fetch()
+    if author is None:
+        print("All fetch strategies failed. Keeping previously published data.")
+        return  # exit 0, gs_data.json not written -> workflow guard skips push
 
-    print("正在生成 Shields.io 数据...")
-    shieldio_data = {
+    author["updated"] = str(datetime.now())
+    author["publications"] = {v["author_pub_id"]: v for v in author["publications"]}
+
+    with open("results/gs_data.json", "w") as f:
+        json.dump(author, f, ensure_ascii=False)
+
+    shieldio = {
         "schemaVersion": 1,
         "label": "citations",
         "message": f"{author.get('citedby', 0)}",
     }
+    with open("results/gs_data_shieldsio.json", "w") as f:
+        json.dump(shieldio, f, ensure_ascii=False)
 
-    print("正在保存 Shields.io 数据...")
-    with open(f"results/gs_data_shieldsio.json", "w") as outfile:
-        json.dump(shieldio_data, outfile, ensure_ascii=False)
+    print(f"Success. citedby={author.get('citedby')}, "
+          f"h-index={author.get('hindex')}, i10={author.get('i10index')}")
 
-    print("数据处理完成。")
+
+if __name__ == "__main__":
+    main()

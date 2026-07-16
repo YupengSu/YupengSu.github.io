@@ -10,7 +10,9 @@ title                    : "Welcome to Yupeng Su's Homepage!"
 description              : "Focusing on Efficient LLM Optimization and High-Performance Computing."
 url                      : "https://yupengsu.github.io"
 repository               : "YupengSu/YupengSu.github.io"
-google_scholar_stats_use_cdn : true
+# false -> fetch citation JSON from raw.githubusercontent (updates within minutes).
+# true  -> fetch via jsdelivr CDN (faster globally, but can cache for ~12h).
+google_scholar_stats_use_cdn : false
 
 # google analytics
 google_analytics_id      :  G-GGL7KY9N0N # get google_analytics_id from https://analytics.google.com/analytics/
