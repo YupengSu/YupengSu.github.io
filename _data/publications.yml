@@ -63,6 +63,7 @@
   tldr: "Attention-FFN-aware post-training quantization using second-order Hessian information, paired with a layer-wise LLM accelerator on FPGA."
   links:
     paper: "https://doi.org/10.1109/TCAD.2026.3697679"
+    code: "https://github.com/EasonGZY/AutoAPTQ"
 
 - title: "LLM-Barber: Block-Aware Rebuilder for Sparsity Mask in One-Shot for Large Language Models"
   authors: "Yupeng Su, Ziyi Guan, Xiaoqun Liu, Tianlai Jin, Dongkuan Wu, Zhengwu Chen, Graziano Chesi, Ngai Wong, Hao Yu"
@@ -117,3 +118,4 @@
   tldr: "First to account for the self-attention architecture during post-training quantization, combining mixed-precision via the Hessian matrix."
   links:
     paper: "https://doi.org/10.1145/3649329.3658498"
+    code: "https://github.com/EasonGZY/AutoAPTQ"
