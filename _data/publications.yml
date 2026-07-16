@@ -1,0 +1,108 @@
+# Publications, newest first.
+# first_author: true -> star + highlighted card
+# image: optional thumbnail; otherwise a venue gradient tile is shown.
+
+- title: "MuonQ: Enhancing Low-Bit Muon Quantization via Directional Fidelity Optimization"
+  authors: "Yupeng Su, Ruijie Zhang, Ziyue Liu, Yequan Zhao, Zheng Zhang"
+  venue: "CoLM 2026"
+  venue_full: "Conference on Language Modeling (CoLM)"
+  year: 2026
+  first_author: true
+  tldr: "Stable 4-bit quantization of Muon optimizer states via pre-quantization normalization, structural decomposition, and μ-law companding."
+  links:
+    paper: "https://arxiv.org/abs/2605.11396"
+    code: "https://github.com/YupengSu/MuonQ"
+
+- title: "RankGuide: Tensor-Rank-Guided Routing and Steering for Efficient Reasoning"
+  authors: "Jiayi Tian, Yupeng Su, Ryan Solgi, Souvik Kundu, Zheng Zhang"
+  venue: "CoLM 2026"
+  venue_full: "Conference on Language Modeling (CoLM)"
+  year: 2026
+  first_author: false
+  tldr: "Tensor-rank-guided routing and steering between small and large reasoning models, cutting inference latency by up to 1.75x."
+  links:
+    paper: "https://arxiv.org/abs/2604.16694"
+
+- title: "Muon²: Boosting Muon via Adaptive Second-Moment Preconditioning"
+  authors: "Ziyue Liu, Ruijie Zhang, Zhengyang Wang, Yequan Zhao, Yupeng Su, Zi Yang, Zheng Zhang"
+  venue: "arXiv 2026"
+  venue_full: "arXiv preprint"
+  year: 2026
+  first_author: false
+  tldr: "Adam-style adaptive second-moment preconditioning before orthogonalization, with 40% fewer Newton-Schulz iterations and faster convergence."
+  links:
+    paper: "https://arxiv.org/abs/2604.09967"
+
+- title: "MUON+: Towards More Effective Muon via One Additional Normalization Step for LLM Pre-training"
+  authors: "Ruijie Zhang, Yequan Zhao, Ziyue Liu, Zhengyang Wang, Yupeng Su, Liyan Tan, Zheng Zhang"
+  venue: "arXiv 2026"
+  venue_full: "arXiv preprint"
+  year: 2026
+  first_author: false
+  tldr: "A single additional normalization step that makes Muon more effective and stable for large language model pre-training."
+  links:
+    paper: "https://arxiv.org/abs/2602.21545"
+
+- title: "TEON: Tensorized Orthonormalization Beyond Layer-Wise Muon for Large Language Model Pre-Training"
+  authors: "Ruijie Zhang, Yequan Zhao, Ziyue Liu, Zhengyang Wang, Dongyang Li, Yupeng Su, Sijia Liu, Zheng Zhang"
+  venue: "arXiv 2026"
+  venue_full: "arXiv preprint"
+  year: 2026
+  first_author: false
+  tldr: "Generalizes Muon by modeling network gradients as a structured higher-order tensor, extending orthogonalization beyond individual layers."
+  links:
+    paper: "https://arxiv.org/abs/2601.23261"
+
+- title: "LLM-Barber: Block-Aware Rebuilder for Sparsity Mask in One-Shot for Large Language Models"
+  authors: "Yupeng Su, Ziyi Guan, Xiaoqun Liu, Tianlai Jin, Dongkuan Wu, Zhengwu Chen, Graziano Chesi, Ngai Wong, Hao Yu"
+  venue: "ICCAD 2025"
+  venue_full: "IEEE/ACM ICCAD"
+  year: 2025
+  first_author: true
+  image: "/images/LLM-Barber.jpg"
+  tldr: "Block-aware error optimization with a weight×gradient pruning metric; supports both unstructured and hardware-friendly N:M structured pruning in one shot."
+  links:
+    paper: "https://arxiv.org/abs/2408.10631"
+    code: "https://github.com/YupengSu/LLM-Barber"
+
+- title: "PTQTP: Post-Training Quantization to Trit-Planes for Large Language Models"
+  authors: "He Xiao, Runming Yang, Qingyao Yang, Wendong Xu, Zhen Li, Yupeng Su, Zhengwu Liu, Hongxia Yang, Ngai Wong"
+  venue: "arXiv 2025"
+  venue_full: "arXiv preprint"
+  year: 2025
+  first_author: false
+  tldr: "Decomposes weights into dual ternary trit-planes for multiplication-free, ultra-low-bit post-training quantization, up to 4.63x faster than FP16."
+  links:
+    paper: "https://arxiv.org/abs/2509.16989"
+    code: "https://github.com/HeXiao-55/PTQTP"
+
+- title: "Quantization Meets Reasoning: Exploring and Mitigating Degradation of Low-Bit LLMs in Mathematical Reasoning"
+  authors: "Zhen Li, Yupeng Su, Shixuan Wang, Runming Yang, Congkai Xie, Anni Liu, Ming Li, Jiaqi Cao, Yi Xie, Ngai Wong, Hongxia Yang"
+  venue: "arXiv 2025"
+  venue_full: "arXiv preprint"
+  year: 2025
+  first_author: false
+  tldr: "Explores how low-bit quantization degrades mathematical reasoning in LLMs and proposes targeted recovery strategies."
+  links:
+    paper: "https://arxiv.org/abs/2501.03035"
+
+- title: "EdgeLLM: A Highly Efficient CPU-FPGA Heterogeneous Edge Accelerator for Large Language Models"
+  authors: "Mingqiang Huang, Ao Shen, Kai Li, Haoxiang Peng, Boyu Li, Yupeng Su, Hao Yu"
+  venue: "TCAS-I 2025"
+  venue_full: "IEEE TCAS-I: Regular Papers"
+  year: 2025
+  first_author: false
+  tldr: "A CPU-FPGA heterogeneous accelerator delivering highly efficient large language model inference on the edge."
+  links:
+    paper: "https://doi.org/10.1109/TCSI.2025.3546256"
+
+- title: "APTQ: Attention-Aware Post-Training Mixed-Precision Quantization for Large Language Models"
+  authors: "Ziyi Guan, Hantao Huang, Yupeng Su, Hong Huang, Ngai Wong, Hao Yu"
+  venue: "DAC 2024"
+  venue_full: "ACM/IEEE DAC"
+  year: 2024
+  first_author: false
+  image: "/images/APTQ.jpg"
+  tldr: "First to account for the self-attention architecture during post-training quantization, combining mixed-precision via the Hessian matrix."
+  links:
+    paper: "https://doi.org/10.1145/3649329.3658498"

@@ -1,0 +1,28 @@
+# Education + experience, most recent first.
+education:
+  - period: "2025.09 – Present"
+    title: "Ph.D. in Computer Science"
+    org: "University of California, Santa Barbara (UCSB)"
+    note: "Advised by Prof. Zheng Zhang."
+  - period: "2021.09 – 2025.07"
+    title: "B.Eng. in Microelectronics"
+    org: "Southern University of Science and Technology (SUSTech)"
+    note: "Advised by Prof. Hao Yu."
+  - period: "2018.09 – 2021.06"
+    title: "High School"
+    org: "The First High School of Changsha, Hunan"
+    note: ""
+
+experience:
+  - period: "2024.11 – 2025.05"
+    title: "Student Research Assistant"
+    org: "Prof. Hongxia Yang's Lab, The Hong Kong Polytechnic University (PolyU)"
+    note: ""
+  - period: "2024.08 – 2025.02"
+    title: "Student Research Assistant"
+    org: "Next Gen AI (NGai) Lab, The University of Hong Kong (HKU)"
+    note: ""
+  - period: "2024.06 – 2024.09"
+    title: "Summer Intern"
+    org: "High Performance Integrated Circuit Design Lab, SUSTech"
+    note: ""
