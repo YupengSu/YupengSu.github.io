@@ -81,7 +81,7 @@
   date: datetime(
     year: 2026,
     month: 7,
-    day: 17,
+    day: 16,
   ),
 )
 
@@ -93,7 +93,6 @@
   [#link("mailto:yupengsu@ucsb.edu", icon: false, if-underline: false, if-color: false)[yupengsu\@ucsb.edu]],
   [#link("https://yupengsu.github.io/", icon: false, if-underline: false, if-color: false)[yupengsu.github.io]],
   [#link("https://linkedin.com/in/yupeng-su", icon: false, if-underline: false, if-color: false)[linkedin.com\/in\/yupeng-su]],
-  [#link("https://github.com/YupengSu", icon: false, if-underline: false, if-color: false)[github.com\/YupengSu]],
 )
 
 
@@ -115,9 +114,7 @@
 
   ],
   main-column-second-row: [
-    - Advisor: Prof. Zheng Zhang (ECE, UCSB).
-
-    - GPA: 4.0\/4.0.
+    - Advisor: Prof. Zheng Zhang (ECE, UCSB).  GPA: 4.0\/4.0.
 
   ],
 )
@@ -132,11 +129,7 @@
 
   ],
   main-column-second-row: [
-    - Advisor: Prof. Hao Yu (SME, SUSTech).
-
-    - GPA: 3.93\/4.0, with 178 units completed.
-
-    - Awards: Nominee of Top Ten Graduates of SUSTech; Top Ten Graduates of the College of Engineering, SUSTech.
+    - Advisor: Prof. Hao Yu (SME, SUSTech).  GPA: 3.93\/4.0 (178 units completed).  Awards: Nominee of Top Ten Graduates of SUSTech; Top Ten Graduates of the College of Engineering.
 
     - Dissertation: #emph[Enhanced Mix-Precision Post-Training Quantization for Large Language Models: Block Awareness and Outlier Identification.]
 

@@ -12,8 +12,6 @@ cv:
   social_networks:
     - network: LinkedIn
       username: yupeng-su
-    - network: GitHub
-      username: YupengSu
   sections:
     Research Interests:
       - "**Efficient Pre-training / Post-training Optimization for Large Language Models:** focusing on quantization, sparsification, and low-rank decomposition techniques to improve training and inference efficiency."
@@ -26,8 +24,7 @@ cv:
         start_date: 2025-09
         end_date: present
         highlights:
-          - "Advisor: Prof. Zheng Zhang (ECE, UCSB)."
-          - "GPA: 4.0/4.0."
+          - "Advisor: Prof. Zheng Zhang (ECE, UCSB).  GPA: 4.0/4.0."
       - institution: Southern University of Science and Technology
         area: Microelectronics
         degree: BE
@@ -35,9 +32,7 @@ cv:
         start_date: 2021-09
         end_date: 2025-07
         highlights:
-          - "Advisor: Prof. Hao Yu (SME, SUSTech)."
-          - "GPA: 3.93/4.0, with 178 units completed."
-          - "Awards: Nominee of Top Ten Graduates of SUSTech; Top Ten Graduates of the College of Engineering, SUSTech."
+          - "Advisor: Prof. Hao Yu (SME, SUSTech).  GPA: 3.93/4.0 (178 units completed).  Awards: Nominee of Top Ten Graduates of SUSTech; Top Ten Graduates of the College of Engineering."
           - "Dissertation: *Enhanced Mix-Precision Post-Training Quantization for Large Language Models: Block Awareness and Outlier Identification.*"
     publications:
       - title: "MuonQ: Enhancing Low-Bit Muon Quantization via Directional Fidelity Optimization"

@@ -4,7 +4,6 @@
 - Location: Santa Barbara, CA, USA
 - Website: [yupengsu.github.io](https://yupengsu.github.io/)
 - LinkedIn: [yupeng-su](https://linkedin.com/in/yupeng-su)
-- GitHub: [YupengSu](https://github.com/YupengSu)
 
 
 # Research Interests
@@ -16,20 +15,14 @@
 ## **University of California, Santa Barbara**, PhD in Computer Science -- CA, USA
 Sept 2025 – present
 
-- Advisor: Prof. Zheng Zhang (ECE, UCSB).
-
-- GPA: 4.0/4.0.
+- Advisor: Prof. Zheng Zhang (ECE, UCSB).  GPA: 4.0/4.0.
 
 
 
 ## **Southern University of Science and Technology**, BE in Microelectronics -- China
 Sept 2021 – July 2025
 
-- Advisor: Prof. Hao Yu (SME, SUSTech).
-
-- GPA: 3.93/4.0, with 178 units completed.
-
-- Awards: Nominee of Top Ten Graduates of SUSTech; Top Ten Graduates of the College of Engineering, SUSTech.
+- Advisor: Prof. Hao Yu (SME, SUSTech).  GPA: 3.93/4.0 (178 units completed).  Awards: Nominee of Top Ten Graduates of SUSTech; Top Ten Graduates of the College of Engineering.
 
 - Dissertation: *Enhanced Mix-Precision Post-Training Quantization for Large Language Models: Block Awareness and Outlier Identification.*
 
