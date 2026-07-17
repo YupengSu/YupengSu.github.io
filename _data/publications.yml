@@ -66,7 +66,7 @@
     code: "https://github.com/EasonGZY/AutoAPTQ"
 
 - title: "LLM-Barber: Block-Aware Rebuilder for Sparsity Mask in One-Shot for Large Language Models"
-  authors: "Yupeng Su, Ziyi Guan, Xiaoqun Liu, Tianlai Jin, Dongkuan Wu, Zhengwu Chen, Graziano Chesi, Ngai Wong, Hao Yu"
+  authors: "Yupeng Su, Ziyi Guan, Xiaoqun Liu, Tianlai Jin, Dongkuan Wu, Zhengfei Chen, Graziano Chesi, Ngai Wong, Hao Yu"
   venue: "ICCAD 2025"
   venue_full: "IEEE/ACM ICCAD"
   year: 2025
@@ -89,7 +89,7 @@
     code: "https://github.com/HeXiao-55/PTQTP"
 
 - title: "Quantization Meets Reasoning: Exploring and Mitigating Degradation of Low-Bit LLMs in Mathematical Reasoning"
-  authors: "Zhen Li, Yupeng Su, Shixuan Wang, Runming Yang, Congkai Xie, Anni Liu, Ming Li, Jiaqi Cao, Yi Xie, Ngai Wong, Hongxia Yang"
+  authors: "Zhen Li, Yupeng Su, Songmiao Wang, Runming Yang, Congkai Xie, Aofan Liu, Ming Li, Jiannong Cao, Yuan Xie, Ngai Wong, Hongxia Yang"
   venue: "arXiv 2025"
   venue_full: "arXiv preprint"
   year: 2025
