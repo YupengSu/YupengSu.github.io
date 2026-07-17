@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 #
-# Yupeng Su — CV source (RenderCV v2.8, "classic" theme).
+# Yupeng Su — CV source (RenderCV v2.8, "engineeringresumes" theme).
 # Edit this file and push; the GitHub Action renders the PDF and updates
 # cv/personal-cv.pdf on the main branch (the link used by the homepage).
 #
@@ -27,6 +27,7 @@ cv:
         end_date: present
         highlights:
           - "Advisor: Prof. Zheng Zhang (ECE, UCSB)."
+          - "GPA: 4.0/4.0."
       - institution: Southern University of Science and Technology
         area: Microelectronics
         degree: BE
@@ -35,21 +36,82 @@ cv:
         end_date: 2025-07
         highlights:
           - "Advisor: Prof. Hao Yu (SME, SUSTech)."
-          - "CGA/GPA: 3.93/4.0, with 178 units completed."
+          - "GPA: 3.93/4.0, with 178 units completed."
           - "Awards: Nominee of Top Ten Graduates of SUSTech; Top Ten Graduates of the College of Engineering, SUSTech."
           - "Dissertation: *Enhanced Mix-Precision Post-Training Quantization for Large Language Models: Block Awareness and Outlier Identification.*"
     publications:
-      - title: "APTQ: Attention-aware post-training mixed-precision quantization for large language models"
+      - title: "MuonQ: Enhancing Low-Bit Muon Quantization via Directional Fidelity Optimization"
+        authors:
+          - "**Yupeng Su**"
+          - Ruijie Zhang
+          - Ziyue Liu
+          - Yequan Zhao
+          - Zheng Zhang
+        url: https://arxiv.org/abs/2605.11396
+        journal: "CoLM, 2026"
+        date: 2026-07
+      - title: "RankGuide: Tensor-Rank-Guided Routing and Steering for Efficient Reasoning"
+        authors:
+          - Jiayi Tian
+          - "**Yupeng Su**"
+          - Ryan Solgi
+          - Souvik Kundu
+          - Zheng Zhang
+        url: https://arxiv.org/abs/2604.16694
+        journal: "CoLM, 2026"
+        date: 2026-07
+      - title: "Muon²: Boosting Muon via Adaptive Second-Moment Preconditioning"
+        authors:
+          - Ziyue Liu
+          - Ruijie Zhang
+          - Zhengyang Wang
+          - Yequan Zhao
+          - "**Yupeng Su**"
+          - Zi Yang
+          - Zheng Zhang
+        url: https://arxiv.org/abs/2604.09967
+        journal: "arXiv Preprint, 2026"
+        date: 2026-04
+      - title: "MUON+: Towards More Effective Muon via One Additional Normalization Step for LLM Pre-training"
+        authors:
+          - Ruijie Zhang
+          - Yequan Zhao
+          - Ziyue Liu
+          - Zhengyang Wang
+          - "**Yupeng Su**"
+          - Liyan Tan
+          - Zheng Zhang
+        url: https://arxiv.org/abs/2602.21545
+        journal: "arXiv Preprint, 2026"
+        date: 2026-02
+      - title: "TEON: Tensorized Orthonormalization Beyond Layer-Wise Muon for Large Language Model Pre-Training"
+        authors:
+          - Ruijie Zhang
+          - Yequan Zhao
+          - Ziyue Liu
+          - Zhengyang Wang
+          - Dongyang Li
+          - "**Yupeng Su**"
+          - Sijia Liu
+          - Zheng Zhang
+        url: https://arxiv.org/abs/2601.23261
+        journal: "arXiv Preprint, 2026"
+        date: 2026-01
+      - title: "APTQ+: Attention-FFN-aware Post-Training Quantization for a Layer-wise LLM Accelerator on FPGA"
         authors:
           - Ziyi Guan
-          - Hantao Huang
+          - Zhengfei Chen
+          - Dongkuan Wu
+          - Ao Shen
+          - Yifan Guo
           - "**Yupeng Su**"
-          - Hong Huang
+          - Graziano Chesi
+          - Mingqiang Huang
           - Ngai Wong
           - Hao Yu
-        doi: 10.1145/3649329.3658498
-        journal: IEEE/ACM DAC, 2024
-        date: 2024-06
+        doi: 10.1109/TCAD.2026.3697679
+        journal: "IEEE TCAD, 2026"
+        date: 2026-05
       - title: "LLM-Barber: Block-Aware Rebuilder for Sparsity Mask in One-Shot for Large Language Models"
         authors:
           - "**Yupeng Su**"
@@ -62,33 +124,8 @@ cv:
           - Ngai Wong
           - Hao Yu
         doi: 10.1109/ICCAD66269.2025.11240704
-        journal: IEEE/ACM ICCAD, 2025
+        journal: "IEEE/ACM ICCAD, 2025"
         date: 2025-11
-      - title: "EdgeLLM: A Highly Efficient CPU-FPGA Heterogeneous Edge Accelerator for Large Language Models"
-        authors:
-          - Mingqiang Huang
-          - Ao Shen
-          - Kai Li
-          - Haoxiang Peng
-          - Boyu Li
-          - "**Yupeng Su**"
-          - Hao Yu
-        doi: 10.1109/TCSI.2025.3546256
-        journal: "IEEE TCAS I: Regular Papers, 2025"
-        date: 2025-05
-      - title: "Quantization Meets Reasoning: Exploring Low-Bit Quantization Degradation for Mathematical Reasoning"
-        authors:
-          - "Zhen Li\\*"
-          - "**Yupeng Su**\\*"
-          - Runming Yang
-          - Congkai Xie
-          - Zheng Wang
-          - Zhongwei Xie
-          - Ngai Wong
-          - Hongxia Yang
-        url: https://arxiv.org/abs/2501.03035
-        journal: "Under Review (*Equal Contribution)"
-        date: 2025-01
       - title: "PTQTP: Post-Training Quantization to Trit-Planes for Large Language Models"
         authors:
           - He Xiao
@@ -103,6 +140,42 @@ cv:
         url: https://arxiv.org/abs/2509.16989
         journal: "Under Review"
         date: 2025-09
+      - title: "Quantization Meets Reasoning: Exploring Low-Bit Quantization Degradation for Mathematical Reasoning"
+        authors:
+          - "Zhen Li\\*"
+          - "**Yupeng Su**\\*"
+          - Runming Yang
+          - Congkai Xie
+          - Zheng Wang
+          - Zhongwei Xie
+          - Ngai Wong
+          - Hongxia Yang
+        url: https://arxiv.org/abs/2501.03035
+        journal: "Under Review (*Equal Contribution)"
+        date: 2025-01
+      - title: "EdgeLLM: A Highly Efficient CPU-FPGA Heterogeneous Edge Accelerator for Large Language Models"
+        authors:
+          - Mingqiang Huang
+          - Ao Shen
+          - Kai Li
+          - Haoxiang Peng
+          - Boyu Li
+          - "**Yupeng Su**"
+          - Hao Yu
+        doi: 10.1109/TCSI.2025.3546256
+        journal: "IEEE TCAS I: Regular Papers, 2025"
+        date: 2025-05
+      - title: "APTQ: Attention-aware post-training mixed-precision quantization for large language models"
+        authors:
+          - Ziyi Guan
+          - Hantao Huang
+          - "**Yupeng Su**"
+          - Hong Huang
+          - Ngai Wong
+          - Hao Yu
+        doi: 10.1145/3649329.3658498
+        journal: "IEEE/ACM DAC, 2024"
+        date: 2024-06
     experience:
       - company: Prof. Hongxia Yang's Lab @ PolyU
         position: Student Research Assistant
@@ -127,6 +200,4 @@ cv:
           - "Implemented end-to-end pipelines for compressing, optimizing, and deploying models for efficient devices."
           - "Published **EdgeLLM** based on the project and its results."
 design:
-  theme: classic
-  page:
-    show_top_note: true
+  theme: engineeringresumes
