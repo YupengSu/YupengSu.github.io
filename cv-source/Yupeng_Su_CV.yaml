@@ -70,7 +70,7 @@ cv:
           - Zi Yang
           - Zheng Zhang
         url: https://arxiv.org/abs/2604.09967
-        journal: "arXiv Preprint, 2026"
+        journal: "Under Review"
         date: 2026-04
       - title: "MUON+: Towards More Effective Muon via One Additional Normalization Step for LLM Pre-training"
         authors:
@@ -82,7 +82,7 @@ cv:
           - Liyan Tan
           - Zheng Zhang
         url: https://arxiv.org/abs/2602.21545
-        journal: "arXiv Preprint, 2026"
+        journal: "Under Review"
         date: 2026-02
       - title: "TEON: Tensorized Orthonormalization Beyond Layer-Wise Muon for Large Language Model Pre-Training"
         authors:
@@ -95,7 +95,7 @@ cv:
           - Sijia Liu
           - Zheng Zhang
         url: https://arxiv.org/abs/2601.23261
-        journal: "arXiv Preprint, 2026"
+        journal: "Under Review"
         date: 2026-01
       - title: "APTQ+: Attention-FFN-aware Post-Training Quantization for a Layer-wise LLM Accelerator on FPGA"
         authors:
@@ -119,7 +119,7 @@ cv:
           - Xiaoqun Liu
           - Tianlai Jin
           - Dongkuan Wu
-          - Chenfei Chen
+          - Zhengfei Chen
           - Graziano Chesi
           - Ngai Wong
           - Hao Yu
@@ -140,14 +140,17 @@ cv:
         url: https://arxiv.org/abs/2509.16989
         journal: "Under Review"
         date: 2025-09
-      - title: "Quantization Meets Reasoning: Exploring Low-Bit Quantization Degradation for Mathematical Reasoning"
+      - title: "Quantization Meets Reasoning: Exploring and Mitigating Degradation of Low-Bit LLMs in Mathematical Reasoning"
         authors:
           - "Zhen Li\\*"
           - "**Yupeng Su**\\*"
+          - Songmiao Wang
           - Runming Yang
           - Congkai Xie
-          - Zheng Wang
-          - Zhongwei Xie
+          - Aofan Liu
+          - Ming Li
+          - Jiannong Cao
+          - Yuan Xie
           - Ngai Wong
           - Hongxia Yang
         url: https://arxiv.org/abs/2501.03035

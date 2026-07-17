@@ -81,7 +81,7 @@
   date: datetime(
     year: 2026,
     month: 7,
-    day: 17,
+    day: 16,
   ),
 )
 
@@ -191,7 +191,7 @@
   main-column-second-row: [
     Ziyue Liu, Ruijie Zhang, Zhengyang Wang, Yequan Zhao, #strong[Yupeng Su], Zi Yang, Zheng Zhang
 
-    #link("https://arxiv.org/abs/2604.09967")[arxiv.org\/abs\/2604.09967] (arXiv Preprint, 2026)
+    #link("https://arxiv.org/abs/2604.09967")[arxiv.org\/abs\/2604.09967] (Under Review)
 
   ],
 )
@@ -208,7 +208,7 @@
   main-column-second-row: [
     Ruijie Zhang, Yequan Zhao, Ziyue Liu, Zhengyang Wang, #strong[Yupeng Su], Liyan Tan, Zheng Zhang
 
-    #link("https://arxiv.org/abs/2602.21545")[arxiv.org\/abs\/2602.21545] (arXiv Preprint, 2026)
+    #link("https://arxiv.org/abs/2602.21545")[arxiv.org\/abs\/2602.21545] (Under Review)
 
   ],
 )
@@ -225,7 +225,7 @@
   main-column-second-row: [
     Ruijie Zhang, Yequan Zhao, Ziyue Liu, Zhengyang Wang, Dongyang Li, #strong[Yupeng Su], Sijia Liu, Zheng Zhang
 
-    #link("https://arxiv.org/abs/2601.23261")[arxiv.org\/abs\/2601.23261] (arXiv Preprint, 2026)
+    #link("https://arxiv.org/abs/2601.23261")[arxiv.org\/abs\/2601.23261] (Under Review)
 
   ],
 )
@@ -257,7 +257,7 @@
 
   ],
   main-column-second-row: [
-    #strong[Yupeng Su], Ziyi Guan, Xiaoqun Liu, Tianlai Jin, Dongkuan Wu, Chenfei Chen, Graziano Chesi, Ngai Wong, Hao Yu
+    #strong[Yupeng Su], Ziyi Guan, Xiaoqun Liu, Tianlai Jin, Dongkuan Wu, Zhengfei Chen, Graziano Chesi, Ngai Wong, Hao Yu
 
     #link("https://doi.org/10.1109/ICCAD66269.2025.11240704")[10.1109\/ICCAD66269.2025.11240704] (IEEE\/ACM ICCAD, 2025)
 
@@ -283,7 +283,7 @@
 
 #regular-entry(
   [
-    #strong[Quantization Meets Reasoning: Exploring Low-Bit Quantization Degradation for Mathematical Reasoning]
+    #strong[Quantization Meets Reasoning: Exploring and Mitigating Degradation of Low-Bit LLMs in Mathematical Reasoning]
 
   ],
   [
@@ -291,7 +291,7 @@
 
   ],
   main-column-second-row: [
-    Zhen Li#sym.ast.basic#h(0pt, weak: true) , #strong[Yupeng Su]#sym.ast.basic#h(0pt, weak: true) , Runming Yang, Congkai Xie, Zheng Wang, Zhongwei Xie, Ngai Wong, Hongxia Yang
+    Zhen Li#sym.ast.basic#h(0pt, weak: true) , #strong[Yupeng Su]#sym.ast.basic#h(0pt, weak: true) , Songmiao Wang, Runming Yang, Congkai Xie, Aofan Liu, Ming Li, Jiannong Cao, Yuan Xie, Ngai Wong, Hongxia Yang
 
     #link("https://arxiv.org/abs/2501.03035")[arxiv.org\/abs\/2501.03035] (Under Review (#sym.ast.basic#h(0pt, weak: true) Equal Contribution))
 

@@ -62,7 +62,7 @@ Apr 2026
 
 Ziyue Liu, Ruijie Zhang, Zhengyang Wang, Yequan Zhao, **Yupeng Su**, Zi Yang, Zheng Zhang
 
-[arxiv.org/abs/2604.09967](https://arxiv.org/abs/2604.09967) (arXiv Preprint, 2026)
+[arxiv.org/abs/2604.09967](https://arxiv.org/abs/2604.09967) (Under Review)
 
 
 
@@ -72,7 +72,7 @@ Feb 2026
 
 Ruijie Zhang, Yequan Zhao, Ziyue Liu, Zhengyang Wang, **Yupeng Su**, Liyan Tan, Zheng Zhang
 
-[arxiv.org/abs/2602.21545](https://arxiv.org/abs/2602.21545) (arXiv Preprint, 2026)
+[arxiv.org/abs/2602.21545](https://arxiv.org/abs/2602.21545) (Under Review)
 
 
 
@@ -82,7 +82,7 @@ Jan 2026
 
 Ruijie Zhang, Yequan Zhao, Ziyue Liu, Zhengyang Wang, Dongyang Li, **Yupeng Su**, Sijia Liu, Zheng Zhang
 
-[arxiv.org/abs/2601.23261](https://arxiv.org/abs/2601.23261) (arXiv Preprint, 2026)
+[arxiv.org/abs/2601.23261](https://arxiv.org/abs/2601.23261) (Under Review)
 
 
 
@@ -100,7 +100,7 @@ Ziyi Guan, Zhengfei Chen, Dongkuan Wu, Ao Shen, Yifan Guo, **Yupeng Su**, Grazia
 
 Nov 2025
 
-**Yupeng Su**, Ziyi Guan, Xiaoqun Liu, Tianlai Jin, Dongkuan Wu, Chenfei Chen, Graziano Chesi, Ngai Wong, Hao Yu
+**Yupeng Su**, Ziyi Guan, Xiaoqun Liu, Tianlai Jin, Dongkuan Wu, Zhengfei Chen, Graziano Chesi, Ngai Wong, Hao Yu
 
 [10.1109/ICCAD66269.2025.11240704](https://doi.org/10.1109/ICCAD66269.2025.11240704) (IEEE/ACM ICCAD, 2025)
 
@@ -116,11 +116,11 @@ He Xiao, Runming Yang, Qingyao Yang, Wendong Xu, Zhen Li, **Yupeng Su**, Zhengwu
 
 
 
-## **Quantization Meets Reasoning: Exploring Low-Bit Quantization Degradation for Mathematical Reasoning**
+## **Quantization Meets Reasoning: Exploring and Mitigating Degradation of Low-Bit LLMs in Mathematical Reasoning**
 
 Jan 2025
 
-Zhen Li\*, **Yupeng Su**\*, Runming Yang, Congkai Xie, Zheng Wang, Zhongwei Xie, Ngai Wong, Hongxia Yang
+Zhen Li\*, **Yupeng Su**\*, Songmiao Wang, Runming Yang, Congkai Xie, Aofan Liu, Ming Li, Jiannong Cao, Yuan Xie, Ngai Wong, Hongxia Yang
 
 [arxiv.org/abs/2501.03035](https://arxiv.org/abs/2501.03035) (Under Review (*Equal Contribution))
 
