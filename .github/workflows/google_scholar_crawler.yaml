@@ -33,6 +33,7 @@ jobs:
         working-directory: ./google_scholar_crawler
         env:
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: python3 main.py
 
       - name: Publish to google-scholar-stats branch
