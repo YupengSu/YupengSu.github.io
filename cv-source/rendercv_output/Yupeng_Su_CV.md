@@ -65,7 +65,7 @@ Apr 2026
 
 Ziyue Liu, Ruijie Zhang, Zhengyang Wang, Yequan Zhao, **Yupeng Su**, Zi Yang, Zheng Zhang
 
-[arxiv.org/abs/2604.09967](https://arxiv.org/abs/2604.09967) (Under Review)
+[arxiv.org/abs/2604.09967](https://arxiv.org/abs/2604.09967) (EMNLP, 2026 (Oral))
 
 
 

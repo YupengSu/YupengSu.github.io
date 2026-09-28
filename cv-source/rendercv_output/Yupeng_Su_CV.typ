@@ -201,7 +201,7 @@
   main-column-second-row: [
     Ziyue Liu, Ruijie Zhang, Zhengyang Wang, Yequan Zhao, #strong[Yupeng Su], Zi Yang, Zheng Zhang
 
-    #link("https://arxiv.org/abs/2604.09967")[arxiv.org\/abs\/2604.09967] (Under Review)
+    #link("https://arxiv.org/abs/2604.09967")[arxiv.org\/abs\/2604.09967] (EMNLP, 2026 (Oral))
 
   ],
 )
