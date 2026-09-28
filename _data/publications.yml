@@ -33,8 +33,8 @@
 
 - title: "Muon²: Boosting Muon via Adaptive Second-Moment Preconditioning"
   authors: "Ziyue Liu, Ruijie Zhang, Zhengyang Wang, Yequan Zhao, Yupeng Su, Zi Yang, Zheng Zhang"
-  venue: "arXiv 2026"
-  venue_full: "arXiv preprint"
+  venue: "EMNLP 2026 (Oral)"
+  venue_full: "Conference on Empirical Methods in Natural Language Processing (EMNLP, Oral)"
   year: 2026
   first_author: false
   tldr: "Adam-style adaptive second-moment preconditioning before orthogonalization, with 40% fewer Newton-Schulz iterations and faster convergence."
