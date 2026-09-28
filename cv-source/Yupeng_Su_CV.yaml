@@ -35,6 +35,14 @@ cv:
           - "Advisor: Prof. Hao Yu (SME, SUSTech).  GPA: 3.93/4.0 (178 units completed).  Awards: Nominee of Top Ten Graduates of SUSTech; Top Ten Graduates of the College of Engineering."
           - "Dissertation: *Enhanced Mix-Precision Post-Training Quantization for Large Language Models: Block Awareness and Outlier Identification.*"
     publications:
+      - title: "ReFold: Training-Free Reversible Inter-Turn Context Folding for Long-Horizon Agents"
+        authors:
+          - "**Yupeng Su**"
+          - Jiayi Tian
+          - Zheng Zhang
+          - Souvik Kundu
+        journal: "Under Review"
+        date: 2026-09
       - title: "MuonQ: Enhancing Low-Bit Muon Quantization via Directional Fidelity Optimization"
         authors:
           - "**Yupeng Su**"
