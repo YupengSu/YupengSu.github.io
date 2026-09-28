@@ -1,4 +1,7 @@
 # Most recent first. Acceptances and milestones (no arXiv-preprint releases).
+- date: "2026.08"
+  emoji: "🎉"
+  text: "Our paper **Muon²** is accepted by EMNLP 2026 as an **Oral** presentation."
 - date: "2026.07"
   emoji: "🎉"
   text: "Our papers **MuonQ** and **RankGuide** are accepted by CoLM 2026."
