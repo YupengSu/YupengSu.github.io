@@ -2,6 +2,13 @@
 # first_author: true -> star + highlighted card
 # image: optional thumbnail; otherwise a venue gradient tile is shown.
 
+- title: "ReFold: Training-Free Reversible Inter-Turn Context Folding for Long-Horizon Agents"
+  authors: "Yupeng Su, Jiayi Tian, Zheng Zhang, Souvik Kundu"
+  venue: "Under Review"
+  venue_full: "Under Review"
+  year: 2026
+  first_author: true
+
 - title: "MuonQ: Enhancing Low-Bit Muon Quantization via Directional Fidelity Optimization"
   authors: "Yupeng Su, Ruijie Zhang, Ziyue Liu, Yequan Zhao, Zheng Zhang"
   venue: "CoLM 2026"
