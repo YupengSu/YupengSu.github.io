@@ -73,7 +73,7 @@ cv:
           - Zi Yang
           - Zheng Zhang
         url: https://arxiv.org/abs/2604.09967
-        journal: "Under Review"
+        journal: "EMNLP, 2026 (Oral)"
         date: 2026-04
       - title: "MUON+: Towards More Effective Muon via One Additional Normalization Step for LLM Pre-training"
         authors:
