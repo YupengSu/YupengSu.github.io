@@ -29,6 +29,16 @@ Sept 2021 – July 2025
 
 
 # Publications
+## **ReFold: Training-Free Reversible Inter-Turn Context Folding for Long-Horizon Agents**
+
+Sept 2026
+
+**Yupeng Su**, Jiayi Tian, Zheng Zhang, Souvik Kundu
+
+ (Under Review)
+
+
+
 ## **MuonQ: Enhancing Low-Bit Muon Quantization via Directional Fidelity Optimization**
 
 July 2026

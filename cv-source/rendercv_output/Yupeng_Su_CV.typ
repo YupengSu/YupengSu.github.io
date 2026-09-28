@@ -6,7 +6,7 @@
   name: "Yupeng Su",
   title: "Yupeng Su - CV",
   footer: context { [#emph[Yupeng Su -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in July 2026] ],
+  top-note: [ #emph[Last updated in Sept 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -80,8 +80,8 @@
   entries-highlights-space-between-bullet-and-text: 0.3em,
   date: datetime(
     year: 2026,
-    month: 7,
-    day: 17,
+    month: 9,
+    day: 28,
   ),
 )
 
@@ -137,6 +137,23 @@
 )
 
 == Publications
+
+#regular-entry(
+  [
+    #strong[ReFold: Training-Free Reversible Inter-Turn Context Folding for Long-Horizon Agents]
+
+  ],
+  [
+    Sept 2026
+
+  ],
+  main-column-second-row: [
+    #strong[Yupeng Su], Jiayi Tian, Zheng Zhang, Souvik Kundu
+
+    (Under Review)
+
+  ],
+)
 
 #regular-entry(
   [
