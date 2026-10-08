@@ -6,7 +6,7 @@
   name: "Yupeng Su",
   title: "Yupeng Su - CV",
   footer: context { [#emph[Yupeng Su -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in Sept 2026] ],
+  top-note: [ #emph[Last updated in Oct 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -80,8 +80,8 @@
   entries-highlights-space-between-bullet-and-text: 0.3em,
   date: datetime(
     year: 2026,
-    month: 9,
-    day: 28,
+    month: 10,
+    day: 8,
   ),
 )
 
@@ -150,7 +150,7 @@
   main-column-second-row: [
     #strong[Yupeng Su], Jiayi Tian, Zheng Zhang, Souvik Kundu
 
-    (Under Review)
+    #link("https://arxiv.org/abs/2610.07863")[arxiv.org\/abs\/2610.07863] (Under Review)
 
   ],
 )

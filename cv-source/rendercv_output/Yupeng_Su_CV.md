@@ -35,7 +35,7 @@ Sept 2026
 
 **Yupeng Su**, Jiayi Tian, Zheng Zhang, Souvik Kundu
 
- (Under Review)
+[arxiv.org/abs/2610.07863](https://arxiv.org/abs/2610.07863) (Under Review)
 
 
 
