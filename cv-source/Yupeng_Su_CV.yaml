@@ -41,6 +41,7 @@ cv:
           - Jiayi Tian
           - Zheng Zhang
           - Souvik Kundu
+        url: https://arxiv.org/abs/2610.07863
         journal: "Under Review"
         date: 2026-09
       - title: "MuonQ: Enhancing Low-Bit Muon Quantization via Directional Fidelity Optimization"
