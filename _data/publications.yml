@@ -8,6 +8,8 @@
   venue_full: "Under Review"
   year: 2026
   first_author: true
+  links:
+    paper: "https://arxiv.org/abs/2610.07863"
 
 - title: "MuonQ: Enhancing Low-Bit Muon Quantization via Directional Fidelity Optimization"
   authors: "Yupeng Su, Ruijie Zhang, Ziyue Liu, Yequan Zhao, Zheng Zhang"
