@@ -55,6 +55,7 @@
     <img class="side__photo" src="{{ a.photo | relative_url }}" alt="{{ a.name }}">
     <div class="side__meta">
       <h1 class="side__name">{{ a.name }}</h1>
+      <p class="side__zh"><span lang="zh-Hans">{{ a.name_zh }}</span><span class="side__py">{{ a.name_pinyin }}</span><button class="side__say" id="sayName" type="button" data-say="{{ a.name_zh }}" aria-label="Hear how to say my name" title="Hear how to say my name" hidden><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M4 9.5v5h3.5L12 19V5L7.5 9.5H4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button></p>
       <p class="side__role">Ph.D. Student in Computer Science, <span class="at">UC Santa Barbara</span></p>
       <p class="side__loc"><svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg> {{ a.location }}</p>
     </div>
@@ -76,8 +77,8 @@
         <p class="lead">I make large language models cheaper to train, to serve, and to run as agents.</p>
         <p>
           I am a Ph.D. student in Computer Science at the University of California, Santa Barbara (UCSB),
-          advised by Prof. Zheng Zhang. Before that I received my B.Eng. in Microelectronics from the Southern
-          University of Science and Technology (SUSTech), advised by Prof. Hao Yu.
+          advised by <a href="https://web.ece.ucsb.edu/~zhengzhang/" target="_blank" rel="noopener">Prof. Zheng Zhang</a>. Before that I received my B.Eng. in Microelectronics from the Southern
+          University of Science and Technology (SUSTech), advised by <a href="https://www.sustech.edu.cn/en/faculties/yuhao.html" target="_blank" rel="noopener">Prof. Hao Yu</a>.
         </p>
         <p>
           My research is on efficient large language models: the Muon optimizer family and its low-bit states

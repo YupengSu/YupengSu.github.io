@@ -19,6 +19,20 @@
     try { localStorage.setItem("theme", next); } catch (e) {}
   });
 
+  /* Say my name: the browser reads the Chinese name aloud, shown only when it has a Chinese voice */
+  var say = $("#sayName");
+  if (say && "speechSynthesis" in window) {
+    var zh = function () { return window.speechSynthesis.getVoices().filter(function (v) { return /^zh([-_](CN|Hans))?/i.test(v.lang) && !/(HK|TW)/i.test(v.lang); })[0]; };
+    var check = function () { if (zh()) say.hidden = false; };
+    check();
+    if (window.speechSynthesis.addEventListener) window.speechSynthesis.addEventListener("voiceschanged", check);
+    say.addEventListener("click", function () {
+      var u = new SpeechSynthesisUtterance(say.getAttribute("data-say")), v = zh();
+      u.lang = "zh-CN"; u.rate = 0.8; if (v) u.voice = v;
+      window.speechSynthesis.cancel(); window.speechSynthesis.speak(u);
+    });
+  }
+
   /* Mobile menu */
   var navToggle = $("#navToggle"), navLinks = $("#navLinks");
   if (navToggle) navToggle.addEventListener("click", function () { navLinks.classList.toggle("is-open"); });

@@ -25,6 +25,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Yupeng Su"
+  name_zh          : "苏宇鹏"
+  name_pinyin      : "Sū Yǔpéng"
   avatar           : "images/android-chrome-512x512.png"
   photo            : "images/photo.png"
   bio              : "Ph.D. Student in Computer Science, UC Santa Barbara."
