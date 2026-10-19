@@ -15,6 +15,11 @@
   --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --ease: cubic-bezier(.2, .7, .2, 1);
+  --gold-ink: #926200;
+  /* the three project pages' own colors, for the Research cards */
+  --mq: #003660; --mq-q: #c4870c;
+  --lb: #e2661a; --lb-ink: #b24d0e; --lb-blue: #2f6db5;
+  --rf: #3f5fae; --rf-ink: #36529a; --rf-stub: #1f8a70; --rf-fold: #c98a1b; --rf-hatch: #c3cdd8;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
@@ -22,6 +27,10 @@
     --ink: #eaf1f8; --text: #bdc8d3; --muted: #8896a4; --line: #223244;
     --bg: #0c1620; --bg-soft: #101e2a; --bg-card: #15222f; --ring: rgba(99,166,240,.18);
     --shadow-sm: 0 1px 2px rgba(0,0,0,.3); --shadow: 0 4px 14px rgba(0,0,0,.34); --shadow-lg: 0 16px 44px rgba(0,0,0,.5);
+    --gold-ink: #ecb642; color-scheme: dark;
+    --mq: #86b8ea; --mq-q: #ecb642;
+    --lb: #ec7a2e; --lb-ink: #f39a5c; --lb-blue: #5f9ae0;
+    --rf: #86a1e6; --rf-ink: #a3b8ef; --rf-stub: #43b593; --rf-fold: #e2aa45; --rf-hatch: #3a5066;
   }
 }
 :root[data-theme="dark"] {
@@ -29,12 +38,20 @@
   --ink: #eaf1f8; --text: #bdc8d3; --muted: #8896a4; --line: #223244;
   --bg: #0c1620; --bg-soft: #101e2a; --bg-card: #15222f; --ring: rgba(99,166,240,.18);
   --shadow-sm: 0 1px 2px rgba(0,0,0,.3); --shadow: 0 4px 14px rgba(0,0,0,.34); --shadow-lg: 0 16px 44px rgba(0,0,0,.5);
+  --gold-ink: #ecb642; color-scheme: dark;
+  --mq: #86b8ea; --mq-q: #ecb642;
+  --lb: #ec7a2e; --lb-ink: #f39a5c; --lb-blue: #5f9ae0;
+  --rf: #86a1e6; --rf-ink: #a3b8ef; --rf-stub: #43b593; --rf-fold: #e2aa45; --rf-hatch: #3a5066;
 }
 :root[data-theme="light"] {
   --navy: #003660; --navy-700: #012a4d; --blue: #0a5bb5; --blue-600: #0d68cf; --gold: #e0a021;
   --ink: #14263a; --text: #3c4c5d; --muted: #6f7d8c; --line: #e6ebf1;
   --bg: #ffffff; --bg-soft: #f4f7fb; --bg-card: #ffffff; --ring: rgba(10,91,181,.13);
   --shadow-sm: 0 1px 2px rgba(1,42,77,.06); --shadow: 0 4px 14px rgba(1,42,77,.08); --shadow-lg: 0 16px 42px rgba(1,42,77,.16);
+  --gold-ink: #926200; color-scheme: light;
+  --mq: #003660; --mq-q: #c4870c;
+  --lb: #e2661a; --lb-ink: #b24d0e; --lb-blue: #2f6db5;
+  --rf: #3f5fae; --rf-ink: #36529a; --rf-stub: #1f8a70; --rf-fold: #c98a1b; --rf-hatch: #c3cdd8;
 }
 
 * { box-sizing: border-box; }
@@ -92,8 +109,9 @@ img { max-width: 100%; display: block; }
 .section__note { color: var(--muted); font-size: .86rem; margin: -6px 0 16px; }
 .star { color: var(--gold); }
 
-.prose p { margin: 0 0 13px; font-size: 1.01rem; }
+.prose p { margin: 0 0 13px; font-size: 1.01rem; text-wrap: pretty; }
 .prose p:last-child { margin-bottom: 0; }
+.prose .lead { font-family: var(--serif); font-size: 1.45rem; font-weight: 500; line-height: 1.32; letter-spacing: -.012em; color: var(--ink); margin-bottom: 16px; text-wrap: balance; }
 .prose .hire { border-left: 3px solid var(--gold); background: var(--bg-soft); padding: 12px 16px; border-radius: 0 12px 12px 0; }
 
 /* ---- CITATION SHIELD ---- */
@@ -112,31 +130,79 @@ img { max-width: 100%; display: block; }
 .timeline__date { font-weight: 700; color: var(--navy); font-size: .85rem; font-variant-numeric: tabular-nums; }
 .timeline__text { color: var(--text); font-size: .96rem; }
 
-/* ---- PUBLICATIONS (compact bulleted list) ---- */
-.pub-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 3px; }
-.pub { position: relative; padding: 8px 10px 8px 26px; border-radius: 10px; transition: background .15s; }
+/* ---- PUBLICATIONS: venue badge, then title, authors and links ---- */
+.pub-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.pub { display: grid; grid-template-columns: 90px 1fr; gap: 14px; align-items: start; padding: 9px 10px; border-radius: 10px; transition: background .15s; }
 .pub:hover { background: var(--bg-soft); }
-.pub::before { content: ""; position: absolute; left: 9px; top: 15px; width: 7px; height: 7px; border-radius: 50%; background: var(--blue); }
-.pub--first::before { background: var(--gold); }
+.pub__badge { justify-self: start; margin-top: 1px; padding: 2px 8px; border-radius: 6px; font-size: .74rem; font-weight: 700; line-height: 1.5; white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--muted); background: var(--bg-soft); box-shadow: inset 0 0 0 1px var(--line); }
+.pub:hover .pub__badge { background: var(--bg-card); }
+.pub--first .pub__badge { color: var(--navy); background: color-mix(in srgb, var(--gold) 15%, var(--bg-card)); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--gold) 50%, transparent); }
+.pub__main { min-width: 0; }
 .pub__title { margin: 0 0 1px; font-size: 1rem; line-height: 1.4; font-weight: 600; }
 .pub__title a { color: var(--ink); }
 .pub__title a:hover { color: var(--blue); }
 .pub__authors { margin: 0 0 1px; font-size: .88rem; color: var(--muted); }
 .pub__authors strong { color: var(--navy); }
 .pub__meta { margin: 0; font-size: .85rem; color: var(--muted); display: flex; flex-wrap: wrap; align-items: baseline; }
-.pub__venue { font-style: italic; }
 .pub__meta a { font-weight: 600; }
-.pub__meta .dot { color: var(--muted); opacity: .5; margin: 0 8px; }
+.pub__meta a:not(:first-of-type)::before { content: "·"; display: inline-block; margin: 0 8px; color: var(--muted); opacity: .5; font-weight: 400; }
+.pub__tag { margin-right: 10px; font-size: .72rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+.pub__tag--award { color: var(--gold-ink); }
+.section__note .dot { color: var(--muted); opacity: .5; margin: 0 8px; }
 
-/* ---- PROJECTS ---- */
-.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
-.card { position: relative; display: flex; flex-direction: column; gap: 5px; background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 16px 18px; box-shadow: var(--shadow-sm); transition: transform .2s var(--ease), box-shadow .2s, border-color .2s; }
-.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--blue); }
-.card__meta { font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--blue); }
-.card__title { font-weight: 700; color: var(--ink); font-size: .98rem; }
-.card__authors { font-size: .84rem; color: var(--muted); }
-.card__arrow { position: absolute; top: 14px; right: 15px; color: var(--muted); transition: transform .2s var(--ease), color .2s; }
-.card:hover .card__arrow { color: var(--blue); transform: translate(3px,-3px); }
+/* ---- PROJECT PREVIEWS: the papers with a project page show its title art (face, colors and motif),
+   linked to the page, with the venue badge in the corner ---- */
+.pub--pv { grid-template-columns: 196px 1fr; gap: 18px; align-items: center; padding-block: 12px; }
+.pv {
+  --acc: var(--blue); --face: var(--serif);
+  --tint: color-mix(in srgb, var(--acc) 8%, var(--bg-card));
+  position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px;
+  aspect-ratio: 16 / 9; padding: 26px 10px 10px; border-radius: 10px; background: var(--tint); color: var(--ink); overflow: hidden;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--acc) 16%, transparent);
+  transition: box-shadow .2s, transform .2s var(--ease);
+}
+.pv:hover { color: var(--ink); transform: translateY(-2px); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--acc) 40%, transparent), var(--shadow); }
+.pv--muonq { --acc: var(--mq); --face: "Newsreader", Georgia, serif; }
+.pv--barber { --acc: var(--lb); --face: "Playfair Display", Georgia, serif; }
+.pv--refold { --acc: var(--rf); --face: "Fraunces", Georgia, serif; }
+.pv__badge { position: absolute; top: 8px; left: 8px; margin: 0; }
+.pv__mark { font-family: var(--face); font-size: 1.6rem; line-height: 1; white-space: nowrap; }
+/* MuonQ: the poster's wordmark and the 15 levels of a 4-bit code, which slide from even to mu-law spacing */
+.pv--muonq .pv__mark { font-weight: 800; font-variation-settings: "opsz" 72; letter-spacing: -.025em; color: var(--mq); }
+.pv--muonq .pv__mark .q { color: var(--mq-q); }
+.pv__ruler { display: block; width: 132px; height: auto; overflow: visible; }
+.pv__ruler .base { stroke: color-mix(in srgb, var(--muted) 50%, transparent); stroke-width: 1.6; }
+.pv__ruler .tk { stroke: var(--muted); stroke-width: 2.6; stroke-linecap: round; transition: transform 1.5s var(--ease) .3s; }
+.pv__ruler .tk.z { stroke: var(--mq-q); stroke-width: 3.2; }
+.pv.is-on .pv__ruler .tk { transform: translateX(var(--dx)); }
+/* LLM-Barber: Playfair with an italic "Barber"; the hyphen is a barber pole that turns while the entry is hovered */
+.pv--barber .pv__mark { font-weight: 800; letter-spacing: -.015em; font-size: 1.45rem; }
+.pv--barber .pv__mark i { font-style: italic; font-weight: 700; }
+.pv--barber .dash {
+  display: inline-block; width: .44em; height: .15em; margin: 0 .05em; vertical-align: .27em; border-radius: .03em;
+  background-image: repeating-linear-gradient(-45deg, var(--lb) 0 .07em, var(--tint) .07em .1em, var(--lb-blue) .1em .17em, var(--tint) .17em .2em);
+  background-size: .2828em 100%;
+}
+.pv--barber.is-on .dash { animation: pv-pole 2.4s linear .3s 1; }
+.pub--pv:hover .pv--barber .dash { animation: pv-pole 2.4s linear infinite; }
+@keyframes pv-pole { to { background-position: .2828em 0; } }
+/* ReFold: Fraunces with a light italic "Re"; ten turns underneath fold once: a stub, a note, the newest turn in indigo */
+.pv--refold .pv__mark { font-weight: 600; font-variation-settings: "opsz" 144, "SOFT" 40; letter-spacing: -.02em; }
+.pv--refold .pv__mark .re { font-style: italic; font-weight: 300; color: var(--rf); }
+.pv__strip { display: flex; gap: 3px; width: 124px; height: 7px; }
+.pv__strip i { flex: 1 1 0; min-width: 0; border-radius: 2px; background: var(--rf-hatch); transition: flex-grow .8s var(--ease) .4s, background-color .6s .4s, opacity .6s .4s, margin .8s var(--ease) .4s; }
+.pv--refold.is-on .pv__strip i:nth-child(3) { flex-grow: .34; background: var(--rf-stub); }
+.pv--refold.is-on .pv__strip i:nth-child(4) { flex-grow: 1.15; background: var(--rf-fold); }
+.pv--refold.is-on .pv__strip i:nth-child(5) { flex-grow: .0001; opacity: 0; margin-left: -3px; }
+.pv--refold.is-on .pv__strip i:nth-child(10) { background: var(--rf); }
+.pv.is-reset .pv__ruler .tk, .pv.is-reset .pv__strip i { transition-duration: .3s; transition-delay: 0s; }
+
+/* ---- EARLIER PROJECTS: one line each ---- */
+.minis { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 30px; }
+.minis li { display: grid; gap: 1px; align-content: start; }
+.minis__name { font-weight: 600; font-size: .95rem; line-height: 1.4; color: var(--ink); }
+.minis__name:hover { color: var(--blue); }
+.minis__meta { font-size: .84rem; color: var(--muted); }
 
 /* ---- CV TWO-COL ---- */
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
@@ -165,13 +231,14 @@ img { max-width: 100%; display: block; }
 .totop.is-show { opacity: 1; transform: none; pointer-events: auto; }
 .totop:hover { background: var(--blue); }
 
-/* ---- SCROLL REVEAL ---- */
-.reveal { opacity: 0; transform: translateY(18px); transition: opacity .55s var(--ease), transform .55s var(--ease); }
-.reveal.is-in { opacity: 1; transform: none; }
+/* ---- SCROLL REVEAL (only once the script runs, so the page still reads without it) ---- */
+.js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .55s var(--ease), transform .55s var(--ease); }
+.js .reveal.is-in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
-  .reveal { opacity: 1; transform: none; transition: none; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
   html { scroll-behavior: auto; }
-  .card, .honors li, .shield { transition: none; }
+  .pv, .honors li, .shield, .pv__ruler .tk, .pv__strip i { transition: none; }
+  .pv--barber .dash { animation: none !important; }
 }
 
 /* ---- RESPONSIVE ---- */
@@ -183,6 +250,10 @@ img { max-width: 100%; display: block; }
   .two-col { grid-template-columns: 1fr; gap: 22px; }
 }
 @media (max-width: 560px) {
+  .pub--pv { grid-template-columns: 1fr; gap: 10px; }
+  .pv { aspect-ratio: auto; min-height: 124px; }
+  .pub { grid-template-columns: 1fr; gap: 5px; }
+  .minis { grid-template-columns: 1fr; }
   .side__links { grid-template-columns: 1fr; }
   .honors li { grid-template-columns: 1fr; gap: 2px; }
   .nav__toggle { display: flex; order: 3; }

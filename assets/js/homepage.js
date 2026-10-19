@@ -36,7 +36,7 @@
   /* Scroll-spy */
   var linkFor = {};
   $$("#navLinks a[href^='#']").forEach(function (a) { linkFor[a.getAttribute("href").slice(1)] = a; });
-  var sections = ["about", "news", "publications", "projects", "experience"].map(function (id) { return document.getElementById(id); }).filter(Boolean);
+  var sections = ["about", "news", "publications", "experience"].map(function (id) { return document.getElementById(id); }).filter(Boolean);
   if ("IntersectionObserver" in window && sections.length) {
     var spy = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
@@ -67,6 +67,37 @@
       });
     }, { threshold: 0.12 });
     reveals.forEach(function (el) { ro.observe(el); });
+  }
+
+  /* Project previews: the title art plays once when it comes into view (MuonQ's levels slide to
+     mu-law spacing, ReFold's turns fold, LLM-Barber's pole turns) and again when the entry is hovered */
+  var pvs = $$(".pv");
+  if (reduce || !("IntersectionObserver" in window)) {
+    pvs.forEach(function (el) { el.classList.add("is-on"); });
+  } else {
+    var po = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        en.target.classList.add("is-on");
+        obs.unobserve(en.target);
+      });
+    }, { threshold: 0.6 });
+    pvs.forEach(function (el) {
+      po.observe(el);
+      if (el.classList.contains("pv--barber")) return;
+      var busy = false;
+      el.parentNode.addEventListener("pointerenter", function () {
+        if (!el.classList.contains("is-on") || busy) return;
+        busy = true;
+        el.classList.add("is-reset");
+        el.classList.remove("is-on");
+        setTimeout(function () {
+          el.classList.remove("is-reset");
+          el.classList.add("is-on");
+          setTimeout(function () { busy = false; }, 2000);
+        }, 380);
+      });
+    });
   }
 
   /* Count-up */

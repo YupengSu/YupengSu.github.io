@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Welcome to Yupeng Su's Homepage!"
-description              : "Focusing on Efficient LLM Optimization and High-Performance Computing."
+title                    : "Yupeng Su · UC Santa Barbara"
+description              : "Ph.D. student at UC Santa Barbara working on efficient large language models: low-bit optimizers, quantization and sparsity, and LLM agents."
 url                      : "https://yupengsu.github.io"
 repository               : "YupengSu/YupengSu.github.io"
 # false -> fetch citation JSON from raw.githubusercontent (updates within minutes).

@@ -1,42 +1,50 @@
-# Publications, newest first.
-# first_author: true -> star + highlighted card
-# image: optional thumbnail; otherwise a venue gradient tile is shown.
+# Publications, newest first (the page lists the papers with a preview first).
+# venue: the short badge (venue and year); venue_full: its tooltip.
+# award / status: an optional tag after the badge ("Oral", "Under review").
+# first_author: true -> star; "*" after a name marks equal contribution.
+# preview: muonq | barber | refold -> the entry shows its project page's title art (only papers with a project page).
+# image: optional thumbnail (not shown by the current layout).
 
 - title: "ReFold: Training-Free Reversible Inter-Turn Context Folding for Long-Horizon Agents"
   authors: "Yupeng Su, Jiayi Tian, Zheng Zhang, Souvik Kundu"
-  venue: "Under Review"
-  venue_full: "Under Review"
+  venue: "arXiv 2026"
+  venue_full: "arXiv preprint"
+  status: "Under review"
   year: 2026
   first_author: true
+  preview: refold
   links:
     paper: "https://arxiv.org/abs/2610.07863"
 
 - title: "MuonQ: Enhancing Low-Bit Muon Quantization via Directional Fidelity Optimization"
   authors: "Yupeng Su, Ruijie Zhang, Ziyue Liu, Yequan Zhao, Zheng Zhang"
-  venue: "CoLM 2026"
-  venue_full: "Conference on Language Modeling (CoLM)"
+  venue: "COLM 2026"
+  venue_full: "Conference on Language Modeling (COLM)"
   year: 2026
   first_author: true
   tldr: "Stable 4-bit quantization of Muon optimizer states via pre-quantization normalization, structural decomposition, and μ-law companding."
+  preview: muonq
   links:
     paper: "https://arxiv.org/abs/2605.11396"
     code: "https://github.com/YupengSu/MuonQ"
-    project: "https://yupengsu.github.io/MuonQ"
+    project: "https://yupengsu.github.io/MuonQ/"
 
 - title: "RankGuide: Tensor-Rank-Guided Routing and Steering for Efficient Reasoning"
   authors: "Jiayi Tian, Yupeng Su, Ryan Solgi, Souvik Kundu, Zheng Zhang"
-  venue: "CoLM 2026"
-  venue_full: "Conference on Language Modeling (CoLM)"
+  venue: "COLM 2026"
+  venue_full: "Conference on Language Modeling (COLM)"
   year: 2026
   first_author: false
   tldr: "Tensor-rank-guided routing and steering between small and large reasoning models, cutting inference latency by up to 1.75x."
   links:
     paper: "https://arxiv.org/abs/2604.16694"
+    code: "https://github.com/TTTTTTris/RankGuide"
 
 - title: "Muon²: Boosting Muon via Adaptive Second-Moment Preconditioning"
   authors: "Ziyue Liu, Ruijie Zhang, Zhengyang Wang, Yequan Zhao, Yupeng Su, Zi Yang, Zheng Zhang"
-  venue: "EMNLP 2026 (Oral)"
-  venue_full: "Conference on Empirical Methods in Natural Language Processing (EMNLP, Oral)"
+  venue: "EMNLP 2026"
+  venue_full: "Conference on Empirical Methods in Natural Language Processing (EMNLP)"
+  award: "Oral"
   year: 2026
   first_author: false
   tldr: "Adam-style adaptive second-moment preconditioning before orthogonalization, with 40% fewer Newton-Schulz iterations and faster convergence."
@@ -52,6 +60,7 @@
   tldr: "A single additional normalization step that makes Muon more effective and stable for large language model pre-training."
   links:
     paper: "https://arxiv.org/abs/2602.21545"
+    code: "https://github.com/K1seki221/MuonPlus"
 
 - title: "TEON: Tensorized Orthonormalization Beyond Layer-Wise Muon for Large Language Model Pre-Training"
   authors: "Ruijie Zhang, Yequan Zhao, Ziyue Liu, Zhengyang Wang, Dongyang Li, Yupeng Su, Sijia Liu, Zheng Zhang"
@@ -75,16 +84,18 @@
     code: "https://github.com/EasonGZY/AutoAPTQ"
 
 - title: "LLM-Barber: Block-Aware Rebuilder for Sparsity Mask in One-Shot for Large Language Models"
-  authors: "Yupeng Su, Ziyi Guan, Xiaoqun Liu, Tianlai Jin, Dongkuan Wu, Zhengfei Chen, Graziano Chesi, Ngai Wong, Hao Yu"
+  authors: "Yupeng Su*, Ziyi Guan*, Xiaoqun Liu, Tianlai Jin, Dongkuan Wu, Zhengfei Chen, Graziano Chesi, Ngai Wong, Hao Yu"
   venue: "ICCAD 2025"
-  venue_full: "IEEE/ACM ICCAD"
+  venue_full: "IEEE/ACM International Conference on Computer-Aided Design (ICCAD)"
   year: 2025
   first_author: true
   image: "/images/LLM-Barber.jpg"
   tldr: "Block-aware error optimization with a weight×gradient pruning metric; supports both unstructured and hardware-friendly N:M structured pruning in one shot."
+  preview: barber
   links:
     paper: "https://arxiv.org/abs/2408.10631"
     code: "https://github.com/YupengSu/LLM-Barber"
+    project: "https://yupengsu.github.io/LLM-Barber/"
 
 - title: "PTQTP: Post-Training Quantization to Trit-Planes for Large Language Models"
   authors: "He Xiao, Runming Yang, Qingyao Yang, Wendong Xu, Zhen Li, Yupeng Su, Zhengwu Liu, Hongxia Yang, Ngai Wong"
@@ -105,7 +116,7 @@
   first_author: false
   tldr: "Explores how low-bit quantization degrades mathematical reasoning in LLMs and proposes targeted recovery strategies."
   links:
-    paper: "https://arxiv.org/abs/2501.03035"
+    paper: "https://arxiv.org/abs/2505.11574"
 
 - title: "EdgeLLM: A Highly Efficient CPU-FPGA Heterogeneous Edge Accelerator for Large Language Models"
   authors: "Mingqiang Huang, Ao Shen, Kai Li, Haoxiang Peng, Boyu Li, Yupeng Su, Hao Yu"

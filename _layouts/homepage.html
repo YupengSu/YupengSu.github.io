@@ -15,10 +15,13 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{{ '/images/og-image.png' | absolute_url }}">
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/homepage.css' | relative_url }}?v=6">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500..800;1,6..72,500&display=swap" rel="stylesheet">
+  <!-- the title faces of the ReFold and LLM-Barber project pages, only the letters the Research cards use -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,144,600,40;1,144,300,40&family=Playfair+Display:ital,wght@0,700;0,800;1,700&text=ReFoldLMBarbe0123456789.%25%20%E2%88%92%E2%86%92&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/homepage.css' | relative_url }}?v=7">
 </head>
 <body>
 
@@ -34,7 +37,6 @@
       <a href="#about">About</a>
       <a href="#news">News</a>
       <a href="#publications">Publications</a>
-      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a class="nav__pdf" href="{{ a.cv | relative_url }}" target="_blank" rel="noopener">CV [PDF]</a>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
@@ -69,22 +71,23 @@
   <main class="content">
 
     <section class="section" id="about">
-      <div class="section__head"><h2 class="section__title">Hi there 👋</h2></div>
+      <div class="section__head"><h2 class="section__title">About</h2></div>
       <div class="prose reveal">
+        <p class="lead">I make large language models cheaper to train, to serve, and to run as agents.</p>
         <p>
           I am a Ph.D. student in Computer Science at the University of California, Santa Barbara (UCSB),
           advised by Prof. Zheng Zhang. Before that I received my B.Eng. in Microelectronics from the Southern
           University of Science and Technology (SUSTech), advised by Prof. Hao Yu.
         </p>
         <p>
-          My research focuses on efficient large language models, including quantization, sparsification and
-          low-rank decomposition for faster training and inference, together with optimizer design (the Muon
-          family) for LLM pre-training. I also enjoy bridging machine learning and hardware, from GPU/FPGA
-          kernels to compiler co-design for edge AI.
+          My research is on efficient large language models: the Muon optimizer family and its low-bit states
+          for pre-training, quantization and sparsity for inference, and the context that long-horizon agents
+          carry. I also enjoy bridging machine learning and hardware, from GPU/FPGA kernels to compiler
+          co-design for edge AI.
         </p>
         <p class="hire">
-          <strong>I am actively looking for internship opportunities, either during the summer or the semester.</strong>
-          Feel free to reach out at <a href="mailto:{{ a.email }}">{{ a.email }}</a>.
+          <strong>I am actively looking for 2027 research internships on efficient LLM training, inference and
+          agents</strong> (summer or during the semester). Feel free to reach out at <a href="mailto:{{ a.email }}">{{ a.email }}</a>.
         </p>
       </div>
     </section>
@@ -109,32 +112,45 @@
           <span class="shield__k">citations</span><span class="shield__v" id="total-cite">245</span>
         </a>
       </div>
-      <p class="section__note"><span class="star">★</span> indicates first-author work.</p>
+      <p class="section__note"><span class="star">★</span> first author<span class="dot">·</span>* equal contribution</p>
       <ul class="pub-list reveal">
-        {% for p in pubs %}
+        {%- comment -%} papers with a project-page preview first, then the rest; each group newest first {%- endcomment -%}
+        {%- assign order = "" -%}
+        {%- for p in pubs -%}{%- if p.preview -%}{%- if order != "" -%}{%- assign order = order | append: "," -%}{%- endif -%}{%- assign order = order | append: forloop.index0 -%}{%- endif -%}{%- endfor -%}
+        {%- for p in pubs -%}{%- unless p.preview -%}{%- if order != "" -%}{%- assign order = order | append: "," -%}{%- endif -%}{%- assign order = order | append: forloop.index0 -%}{%- endunless -%}{%- endfor -%}
+        {%- assign order = order | split: "," %}
+        {% for i in order %}
+        {%- assign k = i | plus: 0 -%}
+        {%- assign p = pubs[k] -%}
         {%- assign pdf = p.links.pdf -%}
         {%- unless pdf -%}{%- if p.links.paper contains 'arxiv.org/abs/' -%}{%- assign pdf = p.links.paper | replace: '/abs/', '/pdf/' -%}{%- else -%}{%- assign pdf = p.links.paper -%}{%- endif -%}{%- endunless -%}
-        <li class="pub{% if p.first_author %} pub--first{% endif %}">
-          <p class="pub__title">{% if p.first_author %}<span class="star" title="First author">★</span> {% endif %}{% if p.links.paper %}<a href="{{ p.links.paper }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
-          <p class="pub__authors">{{ p.authors | replace: 'Yupeng Su', '<strong>Yupeng Su</strong>' }}</p>
-          <p class="pub__meta"><span class="pub__venue">{{ p.venue_full }}, {{ p.year }}</span>{% if pdf %}<span class="dot">·</span><a href="{{ pdf }}" target="_blank" rel="noopener">Paper</a>{% endif %}{% if p.links.code %}<span class="dot">·</span><a href="{{ p.links.code }}" target="_blank" rel="noopener">Code</a>{% endif %}{% if p.links.project %}<span class="dot">·</span><a href="{{ p.links.project }}" target="_blank" rel="noopener">Project</a>{% endif %}</p>
+        <li class="pub{% if p.first_author %} pub--first{% endif %}{% if p.preview %} pub--pv{% endif %}">
+          {%- if p.preview %}
+          {%- if p.links.project -%}{%- assign go = p.links.project -%}{%- assign go_label = "project page" -%}{%- else -%}{%- assign go = p.links.paper -%}{%- assign go_label = "paper" -%}{%- endif %}
+          <a class="pv pv--{{ p.preview }}" href="{{ go }}" target="_blank" rel="noopener" aria-label="{{ p.title | split: ':' | first }} {{ go_label }}">
+            <span class="pub__badge pv__badge" title="{{ p.venue_full }}">{{ p.venue }}</span>
+            {%- case p.preview -%}
+            {%- when "muonq" %}
+            <span class="pv__mark">Muon<span class="q">Q</span></span>
+            <svg class="pv__ruler" viewBox="0 0 380 30" aria-hidden="true"><line class="base" x1="2" y1="24" x2="378" y2="24"/>{% assign dx = "0,25.65,38.73,42.28,38.63,29.54,16.34,0,-16.34,-29.54,-38.63,-42.28,-38.73,-25.65,0" | split: "," %}{% for d in dx %}{% assign x = forloop.index0 | times: 26 | plus: 8 %}<line class="tk{% if forloop.index0 == 7 %} z{% endif %}" x1="{{ x }}" x2="{{ x }}" y1="{% if forloop.index0 == 7 %}3{% else %}12{% endif %}" y2="24" style="--dx:{{ d }}px"/>{% endfor %}</svg>
+            {%- when "barber" %}
+            <span class="pv__mark">LLM<span class="dash" aria-hidden="true"></span><i>Barber</i></span>
+            {%- when "refold" %}
+            <span class="pv__mark"><span class="re">Re</span>Fold</span>
+            <span class="pv__strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            {%- endcase %}
+          </a>
+          {%- else %}
+          <span class="pub__badge" title="{{ p.venue_full }}">{{ p.venue }}</span>
+          {%- endif %}
+          <div class="pub__main">
+            <p class="pub__title">{% if p.first_author %}<span class="star" title="First author">★</span> {% endif %}{% if p.links.paper %}<a href="{{ p.links.paper }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
+            <p class="pub__authors">{{ p.authors | replace: 'Yupeng Su', '<strong>Yupeng Su</strong>' }}</p>
+            <p class="pub__meta">{% if p.award %}<span class="pub__tag pub__tag--award">{{ p.award }}</span>{% endif %}{% if p.status %}<span class="pub__tag">{{ p.status }}</span>{% endif %}{% if pdf %}<a href="{{ pdf }}" target="_blank" rel="noopener">Paper</a>{% endif %}{% if p.links.code %}<a href="{{ p.links.code }}" target="_blank" rel="noopener">Code</a>{% endif %}{% if p.links.project %}<a href="{{ p.links.project }}" target="_blank" rel="noopener">Project</a>{% endif %}</p>
+          </div>
         </li>
         {% endfor %}
       </ul>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="section__head"><h2 class="section__title">Projects</h2></div>
-      <div class="cards reveal">
-        {% for pr in site.data.projects %}
-        <a class="card" href="{{ pr.link }}" target="_blank" rel="noopener">
-          <span class="card__meta">{{ pr.meta }}</span>
-          <span class="card__title">{{ pr.name }}</span>
-          <span class="card__authors">{{ pr.authors | replace: 'Yupeng Su', '<strong>Yupeng Su</strong>' }}</span>
-          <span class="card__arrow">↗</span>
-        </a>
-        {% endfor %}
-      </div>
     </section>
 
     <section class="section" id="experience">
@@ -165,6 +181,15 @@
       </div>
     </section>
 
+    <section class="section" id="projects">
+      <div class="section__head"><h2 class="section__title">Earlier projects</h2></div>
+      <ul class="minis reveal">
+        {% for pr in site.data.projects %}
+        <li><a class="minis__name" href="{{ pr.link }}" target="_blank" rel="noopener">{{ pr.name }}</a><span class="minis__meta">{{ pr.meta }}{% if pr.authors contains ',' %} · {{ pr.authors | replace: 'Yupeng Su', '<strong>Yupeng Su</strong>' }}{% endif %}</span></li>
+        {% endfor %}
+      </ul>
+    </section>
+
     <section class="section" id="honors">
       <div class="section__head"><h2 class="section__title">Honors &amp; Awards</h2></div>
       <ul class="honors reveal">
@@ -186,7 +211,7 @@
 <button class="totop" id="toTop" aria-label="Back to top">↑</button>
 
 <script>window.SITE = { repo: "{{ site.repository }}", useCdn: {{ site.google_scholar_stats_use_cdn | default: false }} };</script>
-<script src="{{ '/assets/js/homepage.js' | relative_url }}?v=6"></script>
+<script src="{{ '/assets/js/homepage.js' | relative_url }}?v=7"></script>
 {% include analytics.html %}
 </body>
 </html>
